@@ -11,6 +11,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
@@ -19,7 +20,7 @@ const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
 
 export default function Menu(props) {
-  const { window } = props;
+  const { window } = props; //need help understanding
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -27,16 +28,34 @@ export default function Menu(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        James Boyle
-      </Typography>
-      <Divider />
-      <List>
+    <Box
+      onClick={handleDrawerToggle}
+      sx={{ textAlign: "center", backgroundColor: "primary.main" }}
+    >
+      {" "}
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-around",
+          margin: "0px",
+        }}
+      >
+        <IconButton aria-label="open drawer" edge="start">
+          <CloseIcon style={{ fontSize: "inherit" }} />
+        </IconButton>
+        <Typography variant="h6" sx={{ margin: "15px" }}>
+          James Boyle
+        </Typography>
+      </Box>
+      <Divider sx={{ backgroundColor: "primary.main" }} />
+      <List sx={{ backgroundColor: "primary.main" }}>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText
+                primary={item}
+                sx={{ color: "secondary.contrast" }}
+              />
             </ListItemButton>
           </ListItem>
         ))}
@@ -53,7 +72,6 @@ export default function Menu(props) {
       <AppBar component="nav">
         <Toolbar>
           <IconButton
-            color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
@@ -91,6 +109,7 @@ export default function Menu(props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              backgroundColor: "primary.main",
             },
           }}
         >
