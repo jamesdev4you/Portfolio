@@ -15,6 +15,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import "../index.css";
 
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
@@ -43,7 +44,14 @@ export default function Menu(props) {
         <IconButton aria-label="open drawer" edge="start">
           <CloseIcon style={{ fontSize: "inherit" }} />
         </IconButton>
-        <Typography variant="h6" sx={{ margin: "15px" }}>
+        <Typography
+          variant="h6"
+          sx={{
+            fontFamily: "Montserrat",
+            margin: "15px",
+            paddingRight: "35px",
+          }}
+        >
           James Boyle
         </Typography>
       </Box>
@@ -54,7 +62,7 @@ export default function Menu(props) {
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText
                 primary={item}
-                sx={{ color: "secondary.contrast" }}
+                sx={{ fontFamily: "Montserrat", color: "text.primary" }}
               />
             </ListItemButton>
           </ListItem>
@@ -82,13 +90,21 @@ export default function Menu(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", sm: "block" },
+              color: "text.primary",
+              fontFamily: "Montserrat",
+            }}
           >
             James Boyle
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
+              <Button
+                key={item}
+                sx={{ color: "text.primary", fontFamily: "Montserrat" }}
+              >
                 {item}
               </Button>
             ))}
