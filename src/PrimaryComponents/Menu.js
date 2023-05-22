@@ -15,6 +15,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import Switch from "@mui/material/Switch";
 import "../index.css";
 
 const drawerWidth = 240;
@@ -99,11 +100,17 @@ export default function Menu(props) {
           >
             James Boyle
           </Typography>
+          <Switch />
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button
                 key={item}
-                sx={{ color: "text.primary", fontFamily: "Montserrat" }}
+                sx={{
+                  color: "text.primary",
+                  fontFamily: "Montserrat",
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                }}
               >
                 {item}
               </Button>
