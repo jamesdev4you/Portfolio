@@ -3,6 +3,7 @@ import Menu from "./PrimaryComponents/Menu";
 import HomePage from "./PrimaryComponents/HomePage";
 import SkillsPage from "./PrimaryComponents/SkillsPage";
 import ProjectsPage from "./PrimaryComponents/ProjectsPage";
+import ContactPage from "./PrimaryComponents/ContactPage";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Montserrat from "./Fonts/Montserrat-VariableFont_wght.ttf";
@@ -75,6 +76,7 @@ function App() {
         Wandesk={Wandesk}
         Wanphone={Wanphone}
       />
+      <ContactPage />
     </ThemeProvider>
   );
 }
