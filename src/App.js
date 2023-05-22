@@ -1,6 +1,8 @@
 import React from "react";
 import Menu from "./PrimaryComponents/Menu";
 import HomePage from "./PrimaryComponents/HomePage";
+import SkillsPage from "./PrimaryComponents/SkillsPage";
+import ProjectsPage from "./PrimaryComponents/ProjectsPage";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Montserrat from "./Fonts/Montserrat-VariableFont_wght.ttf";
@@ -16,6 +18,9 @@ const theme = createTheme({
     },
     typography: {
       fontFamily: "Montserrat",
+    },
+    error: {
+      main: "#FFC536",
     },
     components: {
       MuiCssBaseline: {
@@ -55,6 +60,8 @@ function App() {
       <CssBaseline />
       <Menu />
       <HomePage />
+      <SkillsPage />
+      <ProjectsPage />
     </ThemeProvider>
   );
 }
