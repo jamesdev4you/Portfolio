@@ -6,6 +6,9 @@ import ProjectsPage from "./PrimaryComponents/ProjectsPage";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Montserrat from "./Fonts/Montserrat-VariableFont_wght.ttf";
+import Wandesk from "./Images/wandesk.png";
+import Ptdesk from "./Images/ptdesk.png";
+import Gunndesk from "./Images/gunndesk.png";
 
 const theme = createTheme({
   palette: {
@@ -61,7 +64,7 @@ function App() {
       <Menu />
       <HomePage />
       <SkillsPage />
-      <ProjectsPage />
+      <ProjectsPage Gunndesk={Gunndesk} Ptdesk={Ptdesk} Wandesk={Wandesk} />
     </ThemeProvider>
   );
 }
