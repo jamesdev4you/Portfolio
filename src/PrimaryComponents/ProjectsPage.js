@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import ProjectDeskImg from "../SecondaryComponents/ProjectDeskImg";
+import ProjectPhoneImg from "../SecondaryComponents/ProjectPhoneImg";
 import HvacIcon from "@mui/icons-material/Hvac";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
@@ -9,6 +10,7 @@ export default function ProjectsPage(props) {
   const projectData = [
     {
       image: props.Gunndesk,
+      image2: props.Gunnphone,
       icon: HvacIcon,
       title: "Lorem Ipsum",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -17,6 +19,7 @@ export default function ProjectsPage(props) {
     },
     {
       image: props.Wandesk,
+      image2: props.Wanphone,
       icon: PointOfSaleIcon,
       title: "Lorem Ipsum",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -25,6 +28,7 @@ export default function ProjectsPage(props) {
     },
     {
       image: props.Ptdesk,
+      image2: props.Ptphone,
       icon: FitnessCenterIcon,
       title: "Lorem Ipsum",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -43,20 +47,33 @@ export default function ProjectsPage(props) {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "space-around",
+        gap: { xs: "100px", md: "20px", lg: "150px" },
       }}
     >
+      <Typography
+        variant="h1"
+        sx={{
+          paddingTop: "100px",
+          margin: "auto",
+          textAlign: "center",
+        }}
+      >
+        My Projects
+      </Typography>
       {projectData.map((item) => (
         <Box
           sx={{
             width: "100%",
-            height: "100vh",
+            height: "auto",
             backgroundColor: "primary.light",
             display: "flex",
+            flexDirection: { xs: "column", md: "row", lg: "row" },
             alignItems: "center",
             justifyContent: "space-around",
           }}
         >
           <ProjectDeskImg image={item.image} />
+          <ProjectPhoneImg image={item.image2} />
           <Box
             sx={{
               width: { xs: "100%", md: "40%", lg: "30%" },
@@ -87,7 +104,13 @@ export default function ProjectsPage(props) {
             <Typography variant="h5" sx={{ textAlign: "center" }}>
               {item.desc}
             </Typography>
-            <Typography variant="h5" sx={{ textAlign: "center" }}>
+            <Typography
+              variant="h5"
+              sx={{
+                textAlign: "center",
+                display: { xs: "none", md: "none", lg: "inline" },
+              }}
+            >
               {item.desc2}
             </Typography>
           </Box>

@@ -7,8 +7,11 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Montserrat from "./Fonts/Montserrat-VariableFont_wght.ttf";
 import Wandesk from "./Images/wandesk.png";
+import Wanphone from "./Images/wanphone.png";
 import Ptdesk from "./Images/ptdesk.png";
+import Ptphone from "./Images/ptphone.png";
 import Gunndesk from "./Images/gunndesk.png";
+import Gunnphone from "./Images/gunnphone.png";
 
 const theme = createTheme({
   palette: {
@@ -64,7 +67,14 @@ function App() {
       <Menu />
       <HomePage />
       <SkillsPage />
-      <ProjectsPage Gunndesk={Gunndesk} Ptdesk={Ptdesk} Wandesk={Wandesk} />
+      <ProjectsPage
+        Gunndesk={Gunndesk}
+        Gunnphone={Gunnphone}
+        Ptdesk={Ptdesk}
+        Ptphone={Ptphone}
+        Wandesk={Wandesk}
+        Wanphone={Wanphone}
+      />
     </ThemeProvider>
   );
 }

@@ -31,55 +31,68 @@ export default function SkillsPage() {
   ];
 
   return (
-    <Box
-      sx={{
-        width: "100%",
-        height: "auto",
-        backgroundColor: "primary.light",
-        display: "flex",
-        flexWrap: "wrap",
-        alignItems: "center",
-        justifyContent: "space-around",
-        gap: "50px",
-        padding: { xs: "5px", md: "20px 0px", lg: "70px 50px" },
-      }}
-    >
-      {skillsData.map((item) => (
-        <Box
-          sx={{
-            width: { xs: "100%", md: "40%", lg: "30%" },
-            height: "auto",
-            padding: { xs: "20px", md: "30px", lg: "50px" },
-            border: "5px solid black",
-            borderRadius: "25px",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <item.icon
+    <>
+      <Typography
+        variant="h1"
+        sx={{
+          paddingTop: "100px",
+          margin: "auto",
+          textAlign: "center",
+          backgroundColor: "primary.light",
+        }}
+      >
+        My Skills
+      </Typography>
+      <Box
+        sx={{
+          width: "100%",
+          height: "auto",
+          backgroundColor: "primary.light",
+          display: "flex",
+          flexWrap: "wrap",
+          alignItems: "center",
+          justifyContent: "space-around",
+          gap: "50px",
+          padding: { xs: "5px", md: "20px 0px", lg: "70px 50px" },
+        }}
+      >
+        {skillsData.map((item) => (
+          <Box
             sx={{
-              width: "25%",
-              height: "25%",
-              minWidth: "80px",
-              minHeight: "80px",
+              width: { xs: "100%", md: "40%", lg: "30%" },
+              height: "auto",
+              padding: { xs: "20px", md: "30px", lg: "50px" },
+              border: "5px solid black",
+              borderRadius: "25px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
             }}
-          />
-          <Typography
-            variant="h2"
-            sx={{ padding: "20px 0px", textAlign: "center" }}
           >
-            {item.title}
-          </Typography>
-          <Typography variant="h5" sx={{ textAlign: "center" }}>
-            {item.desc}
-          </Typography>
-          <Typography variant="h5" sx={{ textAlign: "center" }}>
-            {item.desc2}
-          </Typography>
-        </Box>
-      ))}
-    </Box>
+            <item.icon
+              sx={{
+                width: "25%",
+                height: "25%",
+                minWidth: "80px",
+                minHeight: "80px",
+              }}
+            />
+            <Typography
+              variant="h2"
+              sx={{ padding: "20px 0px", textAlign: "center" }}
+            >
+              {item.title}
+            </Typography>
+            <Typography variant="h5" sx={{ textAlign: "center" }}>
+              {item.desc}
+            </Typography>
+            <Typography variant="h5" sx={{ textAlign: "center" }}>
+              {item.desc2}
+            </Typography>
+          </Box>
+        ))}
+      </Box>
+    </>
   );
 }
