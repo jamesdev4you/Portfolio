@@ -13,7 +13,7 @@ export default function HomePage() {
         display: "flex",
         alignItems: { xs: "start", md: "space-around", lg: "space-around" },
         justifyContent: "space-around",
-        paddingTop: { xs: "100px", md: "100px", lg: "100px" },
+        paddingTop: { xs: "100px", md: "100px", lg: "200px" },
       }}
     >
       <Box
