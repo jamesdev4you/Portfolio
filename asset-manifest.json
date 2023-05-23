@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.754ebb54.css",
+    "main.js": "/Portfolio/static/js/main.8467cb23.js",
+    "static/media/wanphone.png": "/Portfolio/static/media/wanphone.a1a4a8abfde0e413d960.png",
+    "static/media/gunnphone.png": "/Portfolio/static/media/gunnphone.bc6f9ee11caf49b50d76.png",
+    "static/media/wandesk.png": "/Portfolio/static/media/wandesk.ce8e8410fd05081e857c.png",
+    "static/media/gunndesk.png": "/Portfolio/static/media/gunndesk.72ed50713ccd69e3950f.png",
+    "static/media/james.jpg": "/Portfolio/static/media/james.20ab9cec48852583f356.jpg",
+    "static/media/ptphone.png": "/Portfolio/static/media/ptphone.b461e31589cd478b8abd.png",
+    "static/media/ptdesk.png": "/Portfolio/static/media/ptdesk.a3d5af95547f2637025d.png",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/Portfolio/static/media/Montserrat-VariableFont_wght.c28a96c369871653b853.ttf",
+    "static/media/sun.png": "/Portfolio/static/media/sun.1658b6b697077ce6c0ad.png",
+    "static/media/React.png": "/Portfolio/static/media/React.1e5639fdfd7c944093d3.png",
+    "static/media/JavaScript.png": "/Portfolio/static/media/JavaScript.e4a6603a50d997ebe438.png",
+    "static/media/CSS3.png": "/Portfolio/static/media/CSS3.2a7daffa85bb2869d26d.png",
+    "index.html": "/Portfolio/index.html",
+    "main.754ebb54.css.map": "/Portfolio/static/css/main.754ebb54.css.map",
+    "main.8467cb23.js.map": "/Portfolio/static/js/main.8467cb23.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.754ebb54.css",
+    "static/js/main.8467cb23.js"
+  ]
+}
