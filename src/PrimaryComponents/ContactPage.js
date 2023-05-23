@@ -41,9 +41,11 @@ export default function ContactPage() {
           margin: "auto",
           textAlign: "center",
           backgroundColor: "primary.light",
+          fontFamily: "Montserrat",
+          textDecoration: "underline",
         }}
       >
-        Contact me :)
+        Contact me!
       </Typography>
       <Box
         sx={{

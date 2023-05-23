@@ -39,6 +39,8 @@ export default function AboutPage() {
           paddingBottom: { xs: "50px", md: "20px", lg: "0px" },
           margin: "auto",
           textAlign: "center",
+          fontFamily: "Montserrat",
+          textDecoration: "underline",
         }}
       >
         About Me

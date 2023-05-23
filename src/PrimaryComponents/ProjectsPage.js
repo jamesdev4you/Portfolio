@@ -9,6 +9,8 @@ import HTMLIcon from "../Images/HTML5.png";
 import CSSIcon from "../Images/CSS3.png";
 import JSIcon from "../Images/JavaScript.png";
 import REACTIcon from "../Images/React.png";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 
 export default function ProjectsPage(props) {
   const projectData = [
@@ -79,9 +81,11 @@ export default function ProjectsPage(props) {
           paddingTop: "100px",
           margin: "auto",
           textAlign: "center",
+          fontFamily: "Montserrat",
+          textDecoration: "underline",
         }}
       >
-        My Projects
+        Projects
       </Typography>
       <Box
         sx={{
@@ -137,14 +141,29 @@ export default function ProjectsPage(props) {
               >
                 {item.title}
               </Typography>
+
               <Typography
-                variant="h5"
-                sx={{ textAlign: "center", paddingBottom: "10px" }}
+                variant="h6"
+                sx={{
+                  textAlign: "center",
+                  paddingBottom: "10px",
+                  display: { xs: "none", md: "none", lg: "inline" },
+                }}
               >
                 {item.desc}
               </Typography>
               <Typography
-                variant="h5"
+                variant="h7"
+                sx={{
+                  textAlign: "center",
+                  paddingBottom: "10px",
+                  display: { xs: "inline", md: "inline", lg: "none" },
+                }}
+              >
+                {item.desc}
+              </Typography>
+              <Typography
+                variant="h6"
                 sx={{
                   textAlign: "center",
                   display: { xs: "none", md: "none", lg: "inline" },
@@ -152,6 +171,7 @@ export default function ProjectsPage(props) {
               >
                 {item.desc2}
               </Typography>
+
               <Box
                 sx={{
                   display: "flex",
@@ -160,7 +180,7 @@ export default function ProjectsPage(props) {
                   justifyContent: "center",
                   border: { xs: "2px solid black", md: "none", lg: "none" },
                   gap: { xs: "5px", md: "15px", lg: "25px" },
-                  width: { xs: "90%", md: "100%", lg: "100%" },
+                  width: { xs: "90%", md: "100%", lg: "70%" },
                   borderRadius: "20px",
                   margin: { xs: "10px 0px", md: "20px 0px", lg: "20px 0px" },
                   padding: "5px 0px",
@@ -236,6 +256,22 @@ export default function ProjectsPage(props) {
                   />
                 </Box>
               </Box>
+              <Stack spacing={4} direction="row" sx={{ paddingTop: "10px" }}>
+                <Button
+                  variant="contained"
+                  color="error"
+                  sx={{ padding: "5px 30px" }}
+                >
+                  Live
+                </Button>
+                <Button
+                  variant="contained"
+                  color="error"
+                  sx={{ padding: "5px 30px" }}
+                >
+                  Repo
+                </Button>
+              </Stack>
             </Box>
           </Box>
         ))}
