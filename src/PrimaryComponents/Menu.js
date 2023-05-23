@@ -76,7 +76,7 @@ export default function Menu(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", margin: "auto" }}>
       <CssBaseline />
       <AppBar component="nav">
         <Toolbar>

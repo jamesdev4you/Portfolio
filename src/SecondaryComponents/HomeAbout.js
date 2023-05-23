@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import James from "../Images/james.jpg";
 
 export default function HomeAbout() {
   return (
@@ -12,11 +13,25 @@ export default function HomeAbout() {
         gap: "10px",
       }}
     >
+      <Box
+        sx={{
+          backgroundImage: `url(${James})`,
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          height: { xs: "250px", md: "250px", lg: "300px" },
+          width: { xs: "250px", md: "250px", lg: "300px" },
+          borderRadius: "50%",
+          border: "5px solid black",
+          margin: "auto",
+        }}
+      />
       <Typography
-        variant="h1"
+        variant="h3"
         sx={{
           margin: "auto",
           textAlign: "center",
+          margin: "15px 0px",
         }}
       >
         James Boyle
@@ -27,6 +42,7 @@ export default function HomeAbout() {
           textAlign: "center",
           margin: "auto",
           textAlign: "center",
+          width: "90%",
         }}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -41,6 +57,7 @@ export default function HomeAbout() {
           margin: "auto",
           textAlign: "center",
           display: { xs: "none", md: "none", lg: "flex" },
+          width: "90%",
         }}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

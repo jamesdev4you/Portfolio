@@ -13,9 +13,16 @@ export default function HomePage() {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-around",
+        paddingTop: { xs: "400px", md: "px", lg: "100px" },
       }}
     >
-      <HomeImage />
+      <Box
+        sx={{
+          display: { xs: "none", md: "none", lg: "flex" },
+        }}
+      >
+        <HomeImage />
+      </Box>
       <HomeAbout />
     </Box>
   );
