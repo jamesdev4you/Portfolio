@@ -22,7 +22,8 @@ export default function HomeAbout() {
           height: { xs: "250px", md: "250px", lg: "300px" },
           width: { xs: "250px", md: "250px", lg: "300px" },
           borderRadius: "50%",
-          border: "5px solid black",
+          border: "5px solid",
+          borderColor: "error.main",
           margin: "auto",
         }}
       />

@@ -1,7 +1,7 @@
 import React from "react";
 import Menu from "./PrimaryComponents/Menu";
 import HomePage from "./PrimaryComponents/HomePage";
-import SkillsPage from "./PrimaryComponents/SkillsPage";
+import AboutPage from "./PrimaryComponents/AboutPage";
 import ProjectsPage from "./PrimaryComponents/ProjectsPage";
 import ContactPage from "./PrimaryComponents/ContactPage";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
@@ -65,9 +65,10 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+
       <Menu />
       <HomePage />
-      <SkillsPage />
+      <AboutPage />
       <ProjectsPage
         Gunndesk={Gunndesk}
         Gunnphone={Gunnphone}

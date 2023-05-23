@@ -34,7 +34,7 @@ export default function ContactPage() {
   return (
     <>
       <Typography
-        variant="h1"
+        variant="h2"
         sx={{
           paddingTop: "100px",
           paddingBottom: "100px",
@@ -48,7 +48,7 @@ export default function ContactPage() {
       <Box
         sx={{
           width: "100%",
-          height: "80vh",
+          height: "100%",
           backgroundColor: "primary.light",
           display: "flex",
           flexDirection: "column",
@@ -73,11 +73,10 @@ export default function ContactPage() {
         >
           <CardContent sx={{ color: "black" }}>
             <Typography gutterBottom variant="h5">
-              Contact Us
+              Contact Me!
             </Typography>
             <Typography sx={{ paddingBottom: "15px" }}>
-              Once you press submit, we will get your information and contact
-              you within 24 hours!
+              Once you press submit, I will get back to you within 24 hours!
             </Typography>
             <form className="contact-form" ref={form} onSubmit={sendEmail}>
               <Grid container spacing={2}>

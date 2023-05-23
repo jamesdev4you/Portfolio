@@ -19,7 +19,7 @@ import Switch from "@mui/material/Switch";
 import "../index.css";
 
 const drawerWidth = 240;
-const navItems = ["Home", "Skills", "Projects", "Contact"];
+const navItems = ["Home", "About", "Projects", "Contact"];
 
 export default function Menu(props) {
   const { window } = props; //need help understanding
