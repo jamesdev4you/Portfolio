@@ -82,12 +82,12 @@ export default function AboutPage() {
               }}
             />
             <Typography
-              variant="h3"
+              variant="h4"
               sx={{ padding: "20px 0px", textAlign: "center" }}
             >
               {item.title}
             </Typography>
-            <Typography variant="h5" sx={{ textAlign: "center" }}>
+            <Typography variant="h6" sx={{ textAlign: "center" }}>
               {item.desc}
             </Typography>
           </Box>

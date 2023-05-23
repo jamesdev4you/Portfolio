@@ -8,12 +8,12 @@ export default function HomePage() {
     <Box
       sx={{
         width: "100%",
-        height: "100vh",
+        height: "100%",
         backgroundColor: "primary.light",
         display: "flex",
-        alignItems: "center",
+        alignItems: { xs: "start", md: "space-around", lg: "space-around" },
         justifyContent: "space-around",
-        paddingTop: { xs: "400px", md: "px", lg: "100px" },
+        paddingTop: { xs: "100px", md: "100px", lg: "100px" },
       }}
     >
       <Box
