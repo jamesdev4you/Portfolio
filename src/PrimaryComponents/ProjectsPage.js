@@ -72,6 +72,7 @@ export default function ProjectsPage(props) {
       sx={{
         width: "100%",
         height: "auto",
+        paddingTop: "100px",
         backgroundColor: props.themeLight ? "primary.light" : "dark",
       }}
     >
@@ -183,11 +184,11 @@ export default function ProjectsPage(props) {
                   justifyContent: "center",
                   border: { xs: "2px solid black", md: "none", lg: "none" },
                   gap: { xs: "5px", md: "15px", lg: "25px" },
-                  width: { xs: "90%", md: "70%", lg: "70%" },
+                  width: { xs: "90%", md: "70%", lg: "60%" },
                   borderRadius: "20px",
                   margin: { xs: "10px 0px", md: "20px 0px", lg: "20px 0px" },
                   padding: "10px 0px",
-                  backgroundColor: props.themeLight ? "error.main" : "dark",
+                  backgroundColor: props.themeLight ? "black" : "dark",
                 }}
               >
                 <Box
@@ -198,7 +199,10 @@ export default function ProjectsPage(props) {
                     gap: "5px",
                   }}
                 >
-                  <Typography variant="h7" sx={{ textAlign: "center" }}>
+                  <Typography
+                    variant="h7"
+                    sx={{ textAlign: "center", color: "white" }}
+                  >
                     {item.htmlDesc}
                   </Typography>
                   <img
@@ -215,7 +219,10 @@ export default function ProjectsPage(props) {
                     justifyContent: "center",
                   }}
                 >
-                  <Typography variant="h7" sx={{ textAlign: "center" }}>
+                  <Typography
+                    variant="h7"
+                    sx={{ textAlign: "center", color: "white" }}
+                  >
                     {item.cssDesc}
                   </Typography>
                   <img
@@ -232,7 +239,10 @@ export default function ProjectsPage(props) {
                     gap: "5px",
                   }}
                 >
-                  <Typography variant="h7" sx={{ textAlign: "center" }}>
+                  <Typography
+                    variant="h7"
+                    sx={{ textAlign: "center", color: "white" }}
+                  >
                     {item.jsDesc}
                   </Typography>
                   <img
@@ -249,7 +259,10 @@ export default function ProjectsPage(props) {
                     gap: "5px",
                   }}
                 >
-                  <Typography variant="h7" sx={{ textAlign: "center" }}>
+                  <Typography
+                    variant="h7"
+                    sx={{ textAlign: "center", color: "white" }}
+                  >
                     {item.reactDesc}
                   </Typography>
                   <img
