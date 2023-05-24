@@ -4,7 +4,7 @@ import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
-export default function AboutPage() {
+export default function AboutPage(props) {
   const skillsData = [
     {
       icon: AutoStoriesIcon,
@@ -28,7 +28,7 @@ export default function AboutPage() {
       sx={{
         width: "100%",
         height: "100%",
-        backgroundColor: "primary.light",
+        backgroundColor: props.themeLight ? "primary.light" : "dark",
         paddingTop: { xs: "200px", md: "20px", lg: "0px" },
       }}
     >
@@ -39,8 +39,7 @@ export default function AboutPage() {
           paddingBottom: { xs: "50px", md: "20px", lg: "0px" },
           margin: "auto",
           textAlign: "center",
-          fontFamily: "Montserrat",
-          textDecoration: "underline",
+          fontFamily: "Shrikhand",
         }}
       >
         About Me
@@ -63,13 +62,13 @@ export default function AboutPage() {
               padding: { xs: "15px", md: "30px", lg: "50px" },
               margin: { xs: "15px", md: "0px", lg: "0px" },
               border: "5px solid",
-              borderColor: "error.light",
+              borderColor: props.themeLight ? "black" : "dark",
               borderRadius: "25px",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "primary.main",
+              backgroundColor: props.themeLight ? "primary.main" : "#222222",
             }}
           >
             <item.icon
@@ -78,12 +77,16 @@ export default function AboutPage() {
                 height: "25%",
                 minWidth: "80px",
                 minHeight: "80px",
-                color: "error.light",
+                color: props.themeLight ? "black" : "dark",
               }}
             />
             <Typography
               variant="h4"
-              sx={{ padding: "20px 0px", textAlign: "center" }}
+              sx={{
+                padding: "20px 0px",
+                textAlign: "center",
+                fontFamily: "Shrikhand",
+              }}
             >
               {item.title}
             </Typography>

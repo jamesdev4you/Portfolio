@@ -8,7 +8,7 @@ import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
-export default function ContactPage() {
+export default function ContactPage(props) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -40,18 +40,17 @@ export default function ContactPage() {
           paddingBottom: "100px",
           margin: "auto",
           textAlign: "center",
-          backgroundColor: "primary.light",
-          fontFamily: "Montserrat",
-          textDecoration: "underline",
+          backgroundColor: props.themeLight ? "primary.light" : "dark",
+          fontFamily: "Shrikhand",
         }}
       >
-        Contact me!
+        Contact 😊
       </Typography>
       <Box
         sx={{
           width: "100%",
           height: "100%",
-          backgroundColor: "primary.light",
+          backgroundColor: props.themeLight ? "primary.light" : "dark",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -66,14 +65,14 @@ export default function ContactPage() {
             marginLeft: "auto",
             padding: "20px 5px",
             border: "3px solid",
-            borderColor: "#FFC536",
+            borderColor: props.themeLight ? "error.main" : "white",
             background: "black",
             borderRadius: "50px",
             margin: "13px",
-            backgroundColor: "white",
+            backgroundColor: props.themeLight ? "white" : "black",
           }}
         >
-          <CardContent sx={{ color: "black" }}>
+          <CardContent sx={{ color: props.themeLight ? "black" : "white" }}>
             <Typography gutterBottom variant="h5">
               Contact Me!
             </Typography>
@@ -85,7 +84,7 @@ export default function ContactPage() {
                 <Grid xs={12} sm={6} item>
                   <TextField
                     sx={{
-                      backgroundColor: "white",
+                      backgroundColor: props.themeLight ? "white" : "black",
                       color: "grey",
                     }}
                     name="user_firstname"
@@ -98,7 +97,9 @@ export default function ContactPage() {
                 </Grid>
                 <Grid xs={12} sm={6} item>
                   <TextField
-                    sx={{ backgroundColor: "white" }}
+                    sx={{
+                      backgroundColor: props.themeLight ? "white" : "black",
+                    }}
                     name="user_lastname"
                     label="Last Name"
                     placeholder="Enter Last Name"
@@ -108,7 +109,9 @@ export default function ContactPage() {
                 </Grid>
                 <Grid xs={12} item>
                   <TextField
-                    sx={{ backgroundColor: "white" }}
+                    sx={{
+                      backgroundColor: props.themeLight ? "white" : "black",
+                    }}
                     type="email"
                     name="user_email"
                     label="Email"
@@ -120,7 +123,9 @@ export default function ContactPage() {
                 </Grid>
                 <Grid xs={12} item>
                   <TextField
-                    sx={{ backgroundColor: "white" }}
+                    sx={{
+                      backgroundColor: props.themeLight ? "white" : "black",
+                    }}
                     type="number"
                     name="user_phone"
                     label="Number"
@@ -132,7 +137,9 @@ export default function ContactPage() {
                 </Grid>
                 <Grid xs={12} item>
                   <TextField
-                    sx={{ backgroundColor: "white" }}
+                    sx={{
+                      backgroundColor: props.themeLight ? "white" : "black",
+                    }}
                     label="Message"
                     name="message"
                     multiline
@@ -148,7 +155,7 @@ export default function ContactPage() {
                     type="submit"
                     value="Send"
                     variant="contained"
-                    color="primary"
+                    color="error"
                     fullWidth
                   >
                     Submit

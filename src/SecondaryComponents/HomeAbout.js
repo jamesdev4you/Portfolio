@@ -3,13 +3,14 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import James from "../Images/james.jpg";
 
-export default function HomeAbout() {
+export default function HomeAbout(props) {
   return (
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
         width: { xs: "80%", md: "80%", lg: "35%" },
+        paddingTop: { xs: "100px", md: "100px", lg: "100px" },
         gap: "10px",
       }}
     >
@@ -23,7 +24,7 @@ export default function HomeAbout() {
           width: { xs: "250px", md: "250px", lg: "300px" },
           borderRadius: "50%",
           border: "5px solid",
-          borderColor: "error.main",
+          borderColor: "props.themeLight ? primary.main : dark",
           margin: "auto",
         }}
       />
@@ -32,7 +33,7 @@ export default function HomeAbout() {
         sx={{
           margin: "auto",
           textAlign: "center",
-          margin: "15px 0px",
+          fontFamily: "Shrikhand",
         }}
       >
         James Boyle
@@ -42,7 +43,7 @@ export default function HomeAbout() {
         sx={{
           textAlign: "center",
           margin: "auto",
-          textAlign: "center",
+
           width: "90%",
         }}
       >
@@ -56,8 +57,7 @@ export default function HomeAbout() {
         sx={{
           textAlign: "center",
           margin: "auto",
-          textAlign: "center",
-          display: { xs: "none", md: "none", lg: "flex" },
+
           width: "90%",
         }}
       >

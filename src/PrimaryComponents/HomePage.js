@@ -3,17 +3,17 @@ import Box from "@mui/material/Box";
 import HomeAbout from "../SecondaryComponents/HomeAbout";
 import HomeImage from "../SecondaryComponents/HomeImage";
 
-export default function HomePage() {
+export default function HomePage(props) {
   return (
     <Box
       sx={{
         width: "100%",
         height: "100%",
-        backgroundColor: "primary.light",
+        backgroundColor: props.themeLight ? "primary.light" : "dark",
         display: "flex",
         alignItems: { xs: "start", md: "space-around", lg: "space-around" },
         justifyContent: "space-around",
-        paddingTop: { xs: "100px", md: "100px", lg: "200px" },
+        padding: { xs: "100px 0px", md: "100px 0px", lg: "100px 0px" },
       }}
     >
       <Box
@@ -21,9 +21,9 @@ export default function HomePage() {
           display: { xs: "none", md: "none", lg: "flex" },
         }}
       >
-        <HomeImage />
+        <HomeImage themeLight={props.themeLight} />
       </Box>
-      <HomeAbout />
+      <HomeAbout themeLight={props.themeLight} />
     </Box>
   );
 }

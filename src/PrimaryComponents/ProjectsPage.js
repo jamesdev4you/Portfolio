@@ -72,7 +72,7 @@ export default function ProjectsPage(props) {
       sx={{
         width: "100%",
         height: "auto",
-        backgroundColor: "primary.light",
+        backgroundColor: props.themeLight ? "primary.light" : "dark",
       }}
     >
       <Typography
@@ -81,8 +81,7 @@ export default function ProjectsPage(props) {
           paddingTop: "100px",
           margin: "auto",
           textAlign: "center",
-          fontFamily: "Montserrat",
-          textDecoration: "underline",
+          fontFamily: "Shrikhand",
         }}
       >
         Projects
@@ -101,7 +100,7 @@ export default function ProjectsPage(props) {
             sx={{
               width: "100%",
               height: "auto",
-              backgroundColor: "primary.light",
+              backgroundColor: props.themeLight ? "primary.light" : "dark",
               display: "flex",
               flexDirection: { xs: "column", md: "row", lg: "row" },
               alignItems: "center",
@@ -117,13 +116,13 @@ export default function ProjectsPage(props) {
                 padding: { xs: "20px", md: "30px", lg: "30px 50px" },
                 margin: { xs: "15px", md: "0px", lg: "0px" },
                 border: "5px solid",
-                borderColor: "error.light",
+                borderColor: props.themeLight ? "black" : "dark",
                 borderRadius: "25px",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                backgroundColor: "primary.main",
+                backgroundColor: props.themeLight ? "primary.main" : "#222222",
               }}
             >
               <item.icon
@@ -132,12 +131,16 @@ export default function ProjectsPage(props) {
                   height: "25%",
                   minWidth: "80px",
                   minHeight: "80px",
-                  color: "error.light",
+                  color: props.themeLight ? "black" : "dark",
                 }}
               />
               <Typography
                 variant="h4"
-                sx={{ padding: "20px 0px", textAlign: "center" }}
+                sx={{
+                  padding: "20px 0px",
+                  textAlign: "center",
+                  fontFamily: "Shrikhand",
+                }}
               >
                 {item.title}
               </Typography>
@@ -184,7 +187,7 @@ export default function ProjectsPage(props) {
                   borderRadius: "20px",
                   margin: { xs: "10px 0px", md: "20px 0px", lg: "20px 0px" },
                   padding: "10px 0px",
-                  backgroundColor: "primary.dark",
+                  backgroundColor: props.themeLight ? "error.main" : "dark",
                 }}
               >
                 <Box

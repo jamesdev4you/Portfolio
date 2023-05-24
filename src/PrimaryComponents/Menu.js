@@ -100,7 +100,13 @@ export default function Menu(props) {
           >
             James Boyle
           </Typography>
-          <Switch />
+          <Switch
+            checked={props.checked}
+            onClick={props.handleThemeChange}
+            sx={{
+              color: props.checked ? "primary.light" : "primary.light",
+            }}
+          />
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button
