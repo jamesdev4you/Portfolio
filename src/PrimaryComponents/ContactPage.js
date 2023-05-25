@@ -43,6 +43,7 @@ export default function ContactPage(props) {
           backgroundColor: props.themeLight ? "primary.light" : "dark",
           fontFamily: "Shrikhand",
         }}
+        ref={props.contactRef}
       >
         Contact 😊
       </Typography>

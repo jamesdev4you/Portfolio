@@ -41,6 +41,7 @@ export default function AboutPage(props) {
           textAlign: "center",
           fontFamily: "Shrikhand",
         }}
+        ref={props.aboutRef}
       >
         About Me
       </Typography>

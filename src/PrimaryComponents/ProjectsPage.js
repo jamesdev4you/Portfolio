@@ -84,6 +84,7 @@ export default function ProjectsPage(props) {
           textAlign: "center",
           fontFamily: "Shrikhand",
         }}
+        ref={props.projectsRef}
       >
         Projects
       </Typography>

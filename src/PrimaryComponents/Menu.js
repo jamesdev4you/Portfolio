@@ -19,9 +19,15 @@ import Switch from "@mui/material/Switch";
 import "../index.css";
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Projects", "Contact"];
 
 export default function Menu(props) {
+  const navItems = [
+    { name: "Home", link: props.homeExecuteScroll },
+    { name: "About", link: props.aboutExecuteScroll },
+    { name: "Projects", link: props.projectsExecuteScroll },
+    { name: "Contact", link: props.contactExecuteScroll },
+  ];
+
   const { window } = props; //need help understanding
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -32,7 +38,10 @@ export default function Menu(props) {
   const drawer = (
     <Box
       onClick={handleDrawerToggle}
-      sx={{ textAlign: "center", backgroundColor: "primary.main" }}
+      sx={{
+        textAlign: "center",
+        backgroundColor: props.themeLight ? "primary.light" : "dark",
+      }}
     >
       {" "}
       <Box
@@ -40,6 +49,7 @@ export default function Menu(props) {
           display: "flex",
           justifyContent: "space-around",
           margin: "0px",
+          backgroundColor: props.themeLight ? "primary.light" : "dark",
         }}
       >
         <IconButton aria-label="open drawer" edge="start">
@@ -56,13 +66,17 @@ export default function Menu(props) {
           James Boyle
         </Typography>
       </Box>
-      <Divider sx={{ backgroundColor: "primary.main" }} />
-      <List sx={{ backgroundColor: "primary.main" }}>
+      <Divider
+        sx={{ backgroundColor: props.themeLight ? "primary.light" : "dark" }}
+      />
+      <List
+        sx={{ backgroundColor: props.themeLight ? "primary.light" : "dark" }}
+      >
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton sx={{ textAlign: "center" }} onClick={item.link}>
               <ListItemText
-                primary={item}
+                primary={item.name}
                 sx={{ fontFamily: "Montserrat", color: "text.primary" }}
               />
             </ListItemButton>
@@ -104,7 +118,7 @@ export default function Menu(props) {
             checked={props.checked}
             onClick={props.handleThemeChange}
             sx={{
-              color: props.checked ? "primary.light" : "primary.light",
+              color: "primary.light",
             }}
           />
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
@@ -117,8 +131,9 @@ export default function Menu(props) {
                   paddingLeft: "15px",
                   paddingRight: "15px",
                 }}
+                onClick={item.link}
               >
-                {item}
+                {item.name}
               </Button>
             ))}
           </Box>
@@ -138,7 +153,7 @@ export default function Menu(props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              backgroundColor: "primary.main",
+              backgroundColor: props.themeLight ? "primary.light" : "dark",
             },
           }}
         >

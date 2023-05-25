@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Menu from "./PrimaryComponents/Menu";
 import HomePage from "./PrimaryComponents/HomePage";
 import AboutPage from "./PrimaryComponents/AboutPage";
@@ -90,15 +90,33 @@ function App() {
     setThemeType(!themeLight);
   }
 
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const homeExecuteScroll = () => homeRef.current.scrollIntoView();
+  const aboutExecuteScroll = () => aboutRef.current.scrollIntoView();
+  const projectsExecuteScroll = () => projectsRef.current.scrollIntoView();
+  const contactExecuteScroll = () => contactRef.current.scrollIntoView();
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      <Menu handleThemeChange={handleThemeChange} checked={themeLight} />
-      <HomePage themeLight={themeLight} />
-      <AboutPage themeLight={themeLight} />
+      <Menu
+        handleThemeChange={handleThemeChange}
+        checked={themeLight}
+        homeExecuteScroll={homeExecuteScroll}
+        aboutExecuteScroll={aboutExecuteScroll}
+        projectsExecuteScroll={projectsExecuteScroll}
+        contactExecuteScroll={contactExecuteScroll}
+      />
+      <HomePage themeLight={themeLight} homeRef={homeRef} />
+      <AboutPage themeLight={themeLight} aboutRef={aboutRef} />
       <ProjectsPage
         themeLight={themeLight}
+        projectsRef={projectsRef}
         Gunndesk={Gunndesk}
         Gunnphone={Gunnphone}
         Ptdesk={Ptdesk}
@@ -106,7 +124,7 @@ function App() {
         Wandesk={Wandesk}
         Wanphone={Wanphone}
       />
-      <ContactPage themeLight={themeLight} />
+      <ContactPage themeLight={themeLight} contactRef={contactRef} />
     </ThemeProvider>
   );
 }

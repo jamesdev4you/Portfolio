@@ -15,6 +15,7 @@ export default function HomePage(props) {
         justifyContent: "space-around",
         padding: { xs: "100px 0px", md: "100px 0px", lg: "100px 0px" },
       }}
+      ref={props.homeRef}
     >
       <Box
         sx={{
