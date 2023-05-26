@@ -8,18 +8,18 @@ export default function AboutPage(props) {
   const skillsData = [
     {
       icon: AutoStoriesIcon,
-      title: "Lorem Ipsum",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      title: "Curiosity",
+      desc: "Ever since I've been around, I've yearned to learn new things. Currently I have an Associates degree, and am chasing after a masters in Cyber Security at UCF. Furthermore, I am always learning and mastering new skills in Web Development."
     },
     {
       icon: SportsEsportsIcon,
-      title: "Lorem Ipsum",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      title: "Geeky",
+      desc: "When I'm not working out, learning, or sleeping, I am geeking. From playing chess online, to obsessing over Jurassic Park, I will always have my heart open to geeking out over the newest nerdy thing I can get my hands or eyes on.",
     },
     {
       icon: FavoriteIcon,
-      title: "Lorem Ipsum",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      title: "Passionate",
+      desc: "No matter what I do in life, it will always be at 100% and filled with compassion and love. I always strive to make sure that the people around me have their needs met through my commitment, hard work, and drive to always pour every ounce of my heart into what I do.",
     },
   ];
 

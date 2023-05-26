@@ -18,10 +18,9 @@ export default function ProjectsPage(props) {
       image: props.Gunndesk,
       image2: props.Gunnphone,
       icon: HvacIcon,
-      title: "Lorem Ipsum",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      desc2:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      title: "Gunn HVAC",
+      desc: "This website allows customers to learn about what the Gunn Brothers have to offer with an interactive homepage. Furthermore, customers can find out how much a service call will be using the custom Service Estimate tool made from Google APIs and javascript.",
+      
       htmlDesc: "HTML",
       htmlIcon: HTMLIcon,
       cssDesc: "CSS",
@@ -30,15 +29,15 @@ export default function ProjectsPage(props) {
       jsIcon: JSIcon,
       reactDesc: "React",
       reactIcon: REACTIcon,
+      website: "https://www.gunnbrothershvac.com/",
+      repo:"https://github.com/jamesdev4you/gunnbrothersnewnew",
     },
     {
       image: props.Wandesk,
       image2: props.Wanphone,
       icon: PointOfSaleIcon,
-      title: "Lorem Ipsum",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      desc2:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      title: "SalesBot",
+      desc: "This landing page was created during my appreticeship, and uses animations and color theory to provide a striking visual experience for possible customers to learn about what the SalesBot has to offer!",
       htmlDesc: "HTML",
       htmlIcon: HTMLIcon,
       cssDesc: "CSS",
@@ -47,15 +46,15 @@ export default function ProjectsPage(props) {
       jsIcon: JSIcon,
       reactDesc: "React",
       reactIcon: REACTIcon,
+      website: "https://www.stevenreedpt.com/",
+      repo:"https://github.com/jamesdev4you/StevenPersonalTraining",
     },
     {
       image: props.Ptdesk,
       image2: props.Ptphone,
       icon: FitnessCenterIcon,
-      title: "Lorem Ipsum",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      desc2:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      title: "Steven's PT!",
+      desc: "This website allows clients to seemlessly navigate to find their personal training needs by offering a variety of plans to choose from. Client requested a google forms intergration, multiple swipers, and animations to provide a simple yet interactive experience!",
       htmlDesc: "HTML",
       htmlIcon: HTMLIcon,
       cssDesc: "CSS",
@@ -64,6 +63,8 @@ export default function ProjectsPage(props) {
       jsIcon: JSIcon,
       reactDesc: "React",
       reactIcon: REACTIcon,
+      website: "https://github.com/jamesdev4you/puiblicsales",
+      repo:"https://github.com/jamesdev4you/puiblicsales",
     },
   ];
 
@@ -167,15 +168,7 @@ export default function ProjectsPage(props) {
               >
                 {item.desc}
               </Typography>
-              <Typography
-                variant="h6"
-                sx={{
-                  textAlign: "center",
-                  display: { xs: "none", md: "none", lg: "inline" },
-                }}
-              >
-                {item.desc2}
-              </Typography>
+              
 
               <Box
                 sx={{
@@ -183,12 +176,11 @@ export default function ProjectsPage(props) {
                   flexDirection: { xs: "column", md: "column", lg: "row" },
                   alignItems: "center",
                   justifyContent: "center",
-                  border: { xs: "2px solid black", md: "none", lg: "none" },
                   gap: { xs: "5px", md: "15px", lg: "25px" },
-                  width: { xs: "90%", md: "70%", lg: "60%" },
+                  width: { xs: "90%", md: "70%", lg: "70%" },
                   borderRadius: "20px",
                   margin: { xs: "10px 0px", md: "20px 0px", lg: "20px 0px" },
-                  padding: "10px 0px",
+                  padding: "10px 30px",
                   backgroundColor: props.themeLight ? "black" : "dark",
                 }}
               >
@@ -278,6 +270,8 @@ export default function ProjectsPage(props) {
                   variant="contained"
                   color="error"
                   sx={{ padding: "5px 30px" }}
+                  target="_blank" 
+                  href={`${item.website}`}
                 >
                   Live
                 </Button>
@@ -285,6 +279,8 @@ export default function ProjectsPage(props) {
                   variant="contained"
                   color="error"
                   sx={{ padding: "5px 30px" }}
+                  target="_blank" 
+                  href={`${item.repo}`}
                 >
                   Repo
                 </Button>

@@ -47,10 +47,7 @@ export default function HomeAbout(props) {
           width: "90%",
         }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris Ut enim ad minim
-        veniam quis.
+        Welcome to my portfolio! I am looking to transition from working as an apprentice and a freelance Front End Developer to a Jr. Front End Developer for your company! Currently, I specialize in HTML, CSS, JavaScript, and React. 
       </Typography>
       <Typography
         variant="h5"
@@ -61,10 +58,7 @@ export default function HomeAbout(props) {
           width: "90%",
         }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris Ut enim ad minim
-        veniam quis.
+        From working as Kitchen Manager at Chipotle, to now bringing my clients ideas to life, I have found a passion for Front End Development and hope to bring my communication skills, reliability, and creativity to life in a long-term career at your company! 
       </Typography>
     </Box>
   );
