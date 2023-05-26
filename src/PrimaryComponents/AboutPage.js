@@ -9,7 +9,7 @@ export default function AboutPage(props) {
     {
       icon: AutoStoriesIcon,
       title: "Curiosity",
-      desc: "Ever since I've been around, I've yearned to learn new things. Currently I have an Associates degree, and am chasing after a masters in Cyber Security at UCF. Furthermore, I am always learning and mastering new skills in Web Development."
+      desc: "Ever since I've been around, I've yearned to learn new things. Currently I have an Associates degree, and am chasing after a masters in Cyber Security at UCF. Furthermore, I am always learning and mastering new skills in Web Development.",
     },
     {
       icon: SportsEsportsIcon,
@@ -19,7 +19,7 @@ export default function AboutPage(props) {
     {
       icon: FavoriteIcon,
       title: "Passionate",
-      desc: "No matter what I do in life, it will always be at 100% and filled with compassion and love. I always strive to make sure that the people around me have their needs met through my commitment, hard work, and drive to always pour every ounce of my heart into what I do.",
+      desc: "No matter what I do in life, it will filled with compassion and love. I always strive to make sure that the people around me have their needs met through my commitment, hard work, and drive to always pour every ounce of my heart into what I do.",
     },
   ];
 
