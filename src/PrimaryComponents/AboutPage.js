@@ -59,7 +59,7 @@ export default function AboutPage(props) {
           <Box
             sx={{
               width: { xs: "100%", md: "40%", lg: "30%" },
-              height: "auto",
+              height: "400px",
               padding: { xs: "15px", md: "30px", lg: "50px" },
               margin: { xs: "15px", md: "0px", lg: "0px" },
               border: "5px solid",

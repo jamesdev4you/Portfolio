@@ -16,7 +16,7 @@ import Gunnphone from "./Images/gunnphone.png";
 import { useState } from "react";
 
 function App() {
-  const [themeLight, setThemeType] = useState(true);
+  const [themeLight, setThemeType] = useState(false);
   const theme = createTheme({
     components: {
       MuiSwitch: {
