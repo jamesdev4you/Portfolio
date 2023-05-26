@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import { motion } from "framer-motion";
 
 export default function AboutPage(props) {
   const skillsData = [
@@ -59,7 +60,7 @@ export default function AboutPage(props) {
           <Box
             sx={{
               width: { xs: "100%", md: "40%", lg: "30%" },
-              height: "400px",
+              height: "500px",
               padding: { xs: "15px", md: "30px", lg: "50px" },
               margin: { xs: "15px", md: "0px", lg: "0px" },
               border: "5px solid",
@@ -72,15 +73,20 @@ export default function AboutPage(props) {
               backgroundColor: props.themeLight ? "primary.main" : "#222222",
             }}
           >
-            <item.icon
-              sx={{
-                width: "25%",
-                height: "25%",
-                minWidth: "80px",
-                minHeight: "80px",
-                color: props.themeLight ? "black" : "dark",
-              }}
-            />
+            <motion.div
+              animate={{ rotate: [20, -20, -20, 20] }}
+              transition={{ repeat: Infinity, duration: 4 }}
+            >
+              <item.icon
+                sx={{
+                  width: "25%",
+                  height: "25%",
+                  minWidth: "80px",
+                  minHeight: "80px",
+                  color: props.themeLight ? "black" : "dark",
+                }}
+              />
+            </motion.div>
             <Typography
               variant="h4"
               sx={{

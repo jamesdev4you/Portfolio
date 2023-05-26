@@ -20,7 +20,7 @@ export default function ProjectsPage(props) {
       icon: HvacIcon,
       title: "Gunn HVAC",
       desc: "This website allows customers to learn about what the Gunn Brothers have to offer with an interactive homepage. Furthermore, customers can find out how much a service call will be using the custom Service Estimate tool made from Google APIs and javascript.",
-      
+
       htmlDesc: "HTML",
       htmlIcon: HTMLIcon,
       cssDesc: "CSS",
@@ -30,7 +30,7 @@ export default function ProjectsPage(props) {
       reactDesc: "React",
       reactIcon: REACTIcon,
       website: "https://www.gunnbrothershvac.com/",
-      repo:"https://github.com/jamesdev4you/gunnbrothersnewnew",
+      repo: "https://github.com/jamesdev4you/gunnbrothersnewnew",
     },
     {
       image: props.Wandesk,
@@ -47,7 +47,7 @@ export default function ProjectsPage(props) {
       reactDesc: "React",
       reactIcon: REACTIcon,
       website: "https://www.stevenreedpt.com/",
-      repo:"https://github.com/jamesdev4you/StevenPersonalTraining",
+      repo: "https://github.com/jamesdev4you/StevenPersonalTraining",
     },
     {
       image: props.Ptdesk,
@@ -64,7 +64,7 @@ export default function ProjectsPage(props) {
       reactDesc: "React",
       reactIcon: REACTIcon,
       website: "https://github.com/jamesdev4you/puiblicsales",
-      repo:"https://github.com/jamesdev4you/puiblicsales",
+      repo: "https://github.com/jamesdev4you/puiblicsales",
     },
   ];
 
@@ -168,7 +168,6 @@ export default function ProjectsPage(props) {
               >
                 {item.desc}
               </Typography>
-              
 
               <Box
                 sx={{
@@ -258,6 +257,7 @@ export default function ProjectsPage(props) {
                   >
                     {item.reactDesc}
                   </Typography>
+
                   <img
                     src={`${item.reactIcon}`}
                     alt="HTML"
@@ -270,7 +270,7 @@ export default function ProjectsPage(props) {
                   variant="contained"
                   color="error"
                   sx={{ padding: "5px 30px" }}
-                  target="_blank" 
+                  target="_blank"
                   href={`${item.website}`}
                 >
                   Live
@@ -279,7 +279,7 @@ export default function ProjectsPage(props) {
                   variant="contained"
                   color="error"
                   sx={{ padding: "5px 30px" }}
-                  target="_blank" 
+                  target="_blank"
                   href={`${item.repo}`}
                 >
                   Repo
