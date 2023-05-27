@@ -74,8 +74,13 @@ export default function AboutPage(props) {
             }}
           >
             <motion.div
-              animate={{ rotate: [20, -20, -20, 20] }}
+              animate={{ rotate: [10, -10, -10, 10] }}
               transition={{ repeat: Infinity, duration: 4 }}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
             >
               <item.icon
                 sx={{
