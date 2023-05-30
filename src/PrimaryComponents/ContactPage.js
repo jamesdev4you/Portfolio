@@ -19,7 +19,7 @@ export default function ContactPage(props) {
         "service_egmbqcc",
         "template_9b7i0gb",
         form.current,
-        "4_NE7-Wk3G8d8tgmG"
+        "B4ZbVmS_KHIo9mopv"
       )
       .then(
         (result) => {
