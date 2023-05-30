@@ -16,8 +16,8 @@ export default function ContactPage(props) {
 
     emailjs
       .sendForm(
-        "service_bbool0l",
-        "template_utscod7",
+        "service_egmbqcc",
+        "template_9b7i0gb",
         form.current,
         "4_NE7-Wk3G8d8tgmG"
       )
