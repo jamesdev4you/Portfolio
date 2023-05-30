@@ -46,8 +46,8 @@ export default function ProjectsPage(props) {
       jsIcon: JSIcon,
       reactDesc: "React",
       reactIcon: REACTIcon,
-      website: "https://www.stevenreedpt.com/",
-      repo: "https://github.com/jamesdev4you/StevenPersonalTraining",
+      website: "https://github.com/jamesdev4you/puiblicsales",
+      repo: "https://github.com/jamesdev4you/puiblicsales",
     },
     {
       image: props.Ptdesk,
@@ -63,8 +63,8 @@ export default function ProjectsPage(props) {
       jsIcon: JSIcon,
       reactDesc: "React",
       reactIcon: REACTIcon,
-      website: "https://github.com/jamesdev4you/puiblicsales",
-      repo: "https://github.com/jamesdev4you/puiblicsales",
+      website: "https://www.stevenreedpt.com/",
+      repo: "https://github.com/jamesdev4you/StevenPersonalTraining",
     },
   ];
 
