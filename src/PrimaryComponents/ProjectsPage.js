@@ -29,7 +29,7 @@ export default function ProjectsPage(props) {
       jsIcon: JSIcon,
       reactDesc: "React",
       reactIcon: REACTIcon,
-      website: "https://gunnbrothershvac.com/",
+      website: "https://www.gunnbrothershvac.com/",
       repo: "https://github.com/jamesdev4you/gunnbrothersnewnew",
     },
     {
