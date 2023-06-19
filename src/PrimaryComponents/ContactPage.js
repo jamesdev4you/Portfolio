@@ -45,7 +45,7 @@ export default function ContactPage(props) {
         }}
         ref={props.contactRef}
       >
-        Contact 😊
+        Let's get in Touch!
       </Typography>
       <Box
         sx={{

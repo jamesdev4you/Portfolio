@@ -10,7 +10,7 @@ export default function HomeAbout(props) {
         display: "flex",
         flexDirection: "column",
         width: { xs: "80%", md: "80%", lg: "35%" },
-        paddingTop: { xs: "100px", md: "100px", lg: "100px" },
+        paddingTop: { xs: "0px", md: "50px", lg: "50px" },
         gap: "10px",
       }}
     >
@@ -39,26 +39,30 @@ export default function HomeAbout(props) {
         James Boyle
       </Typography>
       <Typography
-        variant="h5"
         sx={{
+          fontSize: { xs: "18px", md: "20px", lg: "22px" },
           textAlign: "center",
           margin: "auto",
-
-          width: "90%",
+          width: "100%",
         }}
       >
-        Welcome to my portfolio! I am looking to transition from working as an apprentice and a freelance Front End Developer to a Jr. Front End Developer for your company! Currently, I specialize in HTML, CSS, JavaScript, and React. 
+        I am a Web Developer specializing in making your small buisness have a
+        bigger impact on the internet! Make your digital footprint seen by
+        increasing your SEO, increasing your media visibility, and creating a
+        visually stunning and modern website, all at a great price!
       </Typography>
       <Typography
-        variant="h5"
         sx={{
           textAlign: "center",
           margin: "auto",
-
-          width: "90%",
+          fontSize: { xs: "18px", md: "20px", lg: "22px" },
+          width: "100%",
         }}
       >
-        From working as Kitchen Manager at Chipotle, to now bringing my clients ideas to life, I have found a passion for Front End Development and hope to bring my communication skills, reliability, and creativity to life in a long-term career at your company! 
+        Through working with dozens of clients I've found ways to upgrade
+        hundreds of software and media purposes to suite the company's vision! I
+        will always put your dream first, and ensure that you make your money
+        back by providing you with a long-term strategy to success!
       </Typography>
     </Box>
   );

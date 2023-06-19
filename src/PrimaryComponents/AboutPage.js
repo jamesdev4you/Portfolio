@@ -1,26 +1,26 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import AutoStoriesIcon from "@mui/icons-material/AutoStories";
-import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import WebIcon from "@mui/icons-material/Web";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import LocalConvenienceStoreIcon from "@mui/icons-material/LocalConvenienceStore";
 import { motion } from "framer-motion";
 
 export default function AboutPage(props) {
   const skillsData = [
     {
-      icon: AutoStoriesIcon,
-      title: "Curiosity",
-      desc: "Ever since I've been around, I've yearned to learn new things. Currently I have an Associates degree, and am chasing after a masters in Cyber Security at UCF. Furthermore, I am always learning and mastering new skills in Web Development.",
+      icon: LocalConvenienceStoreIcon,
+      title: "Media",
+      desc: "Providing 24/7 marketing is what I do! Through websites, social medias, and content creation I'll be sure that your community is always up to date with what you're up to! This makes up a huge portion of creating a long-term strategy that ensures money going towards your company!",
     },
     {
-      icon: SportsEsportsIcon,
-      title: "Geeky",
-      desc: "When I'm not working out, learning, or sleeping, I am geeking. From playing chess online, to obsessing over Jurassic Park, I will always have my heart open to geeking out over the newest nerdy thing I can get my hands or eyes on.",
+      icon: WebIcon,
+      title: "Websites",
+      desc: "I create fantasic modern website suiting your company's logo, design, and services! If you don't have any logo's or designs don't worry! As I also can provide these too! Furthermore through learning about your company I will add content to your website - so don't worry about hiring a content writer!",
     },
     {
       icon: FavoriteIcon,
       title: "Passionate",
-      desc: "No matter what I do in life, it will filled with compassion and love. I always strive to make sure that the people around me have their needs met through my commitment, hard work, and drive to always pour every ounce of my heart into what I do.",
+      desc: "No matter what I do in life, it will be driven by passion. I always strive to make sure that the people around me have their needs met through my commitment, hard work, and drive to always pour every ounce of my heart into what I do. I'm always one phone call away from providing you excellent service!",
     },
   ];
 
@@ -30,7 +30,7 @@ export default function AboutPage(props) {
         width: "100%",
         height: "100%",
         backgroundColor: props.themeLight ? "primary.light" : "dark",
-        paddingTop: { xs: "200px", md: "20px", lg: "0px" },
+        paddingTop: { xs: "0px", md: "20px", lg: "0px" },
       }}
     >
       <Typography
@@ -44,7 +44,7 @@ export default function AboutPage(props) {
         }}
         ref={props.aboutRef}
       >
-        About Me
+        What I can provide for you!
       </Typography>
       <Box
         sx={{

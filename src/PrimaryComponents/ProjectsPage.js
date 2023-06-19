@@ -5,10 +5,7 @@ import ProjectPhoneImg from "../SecondaryComponents/ProjectPhoneImg";
 import HvacIcon from "@mui/icons-material/Hvac";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
-import HTMLIcon from "../Images/HTML5.png";
-import CSSIcon from "../Images/CSS3.png";
-import JSIcon from "../Images/JavaScript.png";
-import REACTIcon from "../Images/React.png";
+import James from "../Images/james.jpg";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 
@@ -19,18 +16,14 @@ export default function ProjectsPage(props) {
       image2: props.Gunnphone,
       icon: HvacIcon,
       title: "Gunn HVAC",
-      desc: "This website allows customers to learn about what the Gunn Brothers have to offer with an interactive homepage. Furthermore, customers can find out how much a service call will be using the custom Service Estimate tool made from Google APIs and javascript.",
-
-      htmlDesc: "HTML",
-      htmlIcon: HTMLIcon,
-      cssDesc: "CSS",
-      cssIcon: CSSIcon,
-      jsDesc: "Javascript",
-      jsIcon: JSIcon,
-      reactDesc: "React",
-      reactIcon: REACTIcon,
+      desc: "The Gunn Brothers were having issues connecting with clients online, and having a website. Not only did I provide them with a website, but I established ways to stedily increse their SEO retention over time. Furthermore, I provided them with content, and a way for customers to find out how much a service estimate would be. Moreso, I gave them a way for users to contact with them, and ensured that every portion of the website linked the customer towards calling them.",
       website: "https://www.gunnbrothershvac.com/",
       repo: "https://github.com/jamesdev4you/gunnbrothersnewnew",
+      person: James,
+      testimonial:
+        "❝At RCotterill PT, I want to help men and women that have felt like they've been spinning their wheels with their fitness and health.❞ ",
+      rating: "⭐⭐⭐⭐⭐",
+      name: "James Boyle",
     },
     {
       image: props.Wandesk,
@@ -38,16 +31,13 @@ export default function ProjectsPage(props) {
       icon: PointOfSaleIcon,
       title: "SalesBot",
       desc: "This landing page was created during my appreticeship, and uses animations and color theory to provide a striking visual experience for possible customers to learn about what the SalesBot has to offer!",
-      htmlDesc: "HTML",
-      htmlIcon: HTMLIcon,
-      cssDesc: "CSS",
-      cssIcon: CSSIcon,
-      jsDesc: "Javascript",
-      jsIcon: JSIcon,
-      reactDesc: "React",
-      reactIcon: REACTIcon,
       website: "https://github.com/jamesdev4you/puiblicsales",
       repo: "https://github.com/jamesdev4you/puiblicsales",
+      person: James,
+      testimonial:
+        "❝At RCotterill PT, I want to help men and women that have felt like they've been spinning their wheels with their fitness and health.❞ ",
+      rating: "⭐⭐⭐⭐⭐",
+      name: "James Boyle",
     },
     {
       image: props.Ptdesk,
@@ -55,16 +45,13 @@ export default function ProjectsPage(props) {
       icon: FitnessCenterIcon,
       title: "Steven's PT!",
       desc: "This website allows clients to seemlessly navigate to find their personal training needs by offering a variety of plans to choose from. Client requested a google forms intergration, multiple swipers, and animations to provide a simple yet interactive experience!",
-      htmlDesc: "HTML",
-      htmlIcon: HTMLIcon,
-      cssDesc: "CSS",
-      cssIcon: CSSIcon,
-      jsDesc: "Javascript",
-      jsIcon: JSIcon,
-      reactDesc: "React",
-      reactIcon: REACTIcon,
       website: "https://www.stevenreedpt.com/",
       repo: "https://github.com/jamesdev4you/StevenPersonalTraining",
+      person: James,
+      testimonial:
+        "❝At RCotterill PT, I want to help men and women that have felt like they've been spinning their wheels with their fitness and health.❞ ",
+      rating: "⭐⭐⭐⭐⭐",
+      name: "James Boyle",
     },
   ];
 
@@ -80,14 +67,14 @@ export default function ProjectsPage(props) {
       <Typography
         variant="h2"
         sx={{
-          paddingTop: "100px",
+          padding: "100px 0px",
           margin: "auto",
           textAlign: "center",
           fontFamily: "Shrikhand",
         }}
         ref={props.projectsRef}
       >
-        Projects
+        Previous Clients
       </Typography>
       <Box
         sx={{
@@ -175,94 +162,39 @@ export default function ProjectsPage(props) {
                   flexDirection: { xs: "column", md: "column", lg: "row" },
                   alignItems: "center",
                   justifyContent: "center",
-                  gap: { xs: "5px", md: "15px", lg: "25px" },
-                  width: { xs: "90%", md: "70%", lg: "70%" },
+                  gap: { xs: "5px", md: "15px", lg: "15px" },
+                  width: { xs: "90%", md: "70%", lg: "100%" },
                   borderRadius: "20px",
                   margin: { xs: "10px 0px", md: "20px 0px", lg: "20px 0px" },
-                  padding: "10px 30px",
+                  padding: "10px",
                   backgroundColor: props.themeLight ? "black" : "dark",
                 }}
               >
                 <Box
                   sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "5px",
+                    height: "150px",
+                    width: "150px",
+                    borderRadius: "50%",
+                    backgroundImage: `url(${item.person})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    backgroundPosition: "right",
+                    border: "2px solid",
+                    borderColor: "error.light",
+                    marginBottom: "20px",
                   }}
-                >
+                ></Box>
+                <Box sx={{ width: "70%" }}>
                   <Typography
-                    variant="h7"
-                    sx={{ textAlign: "center", color: "white" }}
-                  >
-                    {item.htmlDesc}
-                  </Typography>
-                  <img
-                    src={`${item.htmlIcon}`}
-                    alt="HTML"
-                    style={{ width: "25px", height: "25px" }}
-                  />
-                </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    gap: "5px",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Typography
-                    variant="h7"
-                    sx={{ textAlign: "center", color: "white" }}
-                  >
-                    {item.cssDesc}
-                  </Typography>
-                  <img
-                    src={`${item.cssIcon}`}
-                    alt="HTML"
-                    style={{ width: "25px", height: "25px" }}
-                  />
-                </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "5px",
-                  }}
-                >
-                  <Typography
-                    variant="h7"
-                    sx={{ textAlign: "center", color: "white" }}
-                  >
-                    {item.jsDesc}
-                  </Typography>
-                  <img
-                    src={`${item.jsIcon}`}
-                    alt="HTML"
-                    style={{ width: "25px", height: "25px" }}
-                  />
-                </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "5px",
-                  }}
-                >
-                  <Typography
-                    variant="h7"
-                    sx={{ textAlign: "center", color: "white" }}
-                  >
-                    {item.reactDesc}
-                  </Typography>
+                    sx={{
+                      fontSize: "16px",
+                      textAlign: "center",
 
-                  <img
-                    src={`${item.reactIcon}`}
-                    alt="HTML"
-                    style={{ width: "30px", height: "25px" }}
-                  />
+                      color: "white",
+                    }}
+                  >
+                    {item.testimonial}
+                  </Typography>
                 </Box>
               </Box>
               <Stack spacing={4} direction="row" sx={{ paddingTop: "10px" }}>
@@ -273,16 +205,7 @@ export default function ProjectsPage(props) {
                   target="_blank"
                   href={`${item.website}`}
                 >
-                  Live
-                </Button>
-                <Button
-                  variant="contained"
-                  color="error"
-                  sx={{ padding: "5px 30px" }}
-                  target="_blank"
-                  href={`${item.repo}`}
-                >
-                  Repo
+                  See it Live!
                 </Button>
               </Stack>
             </Box>

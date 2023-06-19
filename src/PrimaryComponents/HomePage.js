@@ -8,7 +8,7 @@ export default function HomePage(props) {
     <Box
       sx={{
         width: "100%",
-        height: "100%",
+        height: "auto",
         backgroundColor: props.themeLight ? "primary.light" : "dark",
         display: "flex",
         alignItems: { xs: "start", md: "space-around", lg: "space-around" },
