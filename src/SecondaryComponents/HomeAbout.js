@@ -46,10 +46,10 @@ export default function HomeAbout(props) {
           width: "100%",
         }}
       >
-        I am a Web Developer specializing in making your small buisness have a
-        bigger impact on the internet! Make your digital footprint seen by
-        increasing your SEO, increasing your media visibility, and creating a
-        visually stunning and modern website, all at a great price!
+        Welcome! I am a Web Developer specializing in making your small buisness
+        have a bigger impact on the internet! I will reduce operating costs,
+        widen your market and discoveribility, reduce your time and money spent
+        on marketing, and increase your credibility!
       </Typography>
       <Typography
         sx={{
@@ -60,9 +60,9 @@ export default function HomeAbout(props) {
         }}
       >
         Through working with dozens of clients I've found ways to upgrade
-        hundreds of software and media purposes to suite the company's vision! I
-        will always put your dream first, and ensure that you make your money
-        back by providing you with a long-term strategy to success!
+        hundreds of software and media purposes to suite any company's vision! I
+        will always put you first, and ensure that you make your money back by
+        providing you with a long-term strategy to success!
       </Typography>
     </Box>
   );

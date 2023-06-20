@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import Menu from "./PrimaryComponents/Menu";
 import HomePage from "./PrimaryComponents/HomePage";
 import AboutPage from "./PrimaryComponents/AboutPage";
+import Benefits from "./PrimaryComponents/Benefits";
 import ProjectsPage from "./PrimaryComponents/ProjectsPage";
 import ContactPage from "./PrimaryComponents/ContactPage";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
@@ -92,11 +93,13 @@ function App() {
 
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
+  const benefitRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
   const homeExecuteScroll = () => homeRef.current.scrollIntoView();
   const aboutExecuteScroll = () => aboutRef.current.scrollIntoView();
+  const benefitExecuteScroll = () => benefitRef.current.scrollIntoView();
   const projectsExecuteScroll = () => projectsRef.current.scrollIntoView();
   const contactExecuteScroll = () => contactRef.current.scrollIntoView();
 
@@ -114,6 +117,11 @@ function App() {
       />
       <HomePage themeLight={themeLight} homeRef={homeRef} />
       <AboutPage themeLight={themeLight} aboutRef={aboutRef} />
+      <Benefits
+        themeLight={themeLight}
+        aboutRef={benefitRef}
+        contactExecuteScroll={contactExecuteScroll}
+      />
       <ProjectsPage
         themeLight={themeLight}
         projectsRef={projectsRef}

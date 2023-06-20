@@ -141,11 +141,11 @@ export default function ContactPage(props) {
                     sx={{
                       backgroundColor: props.themeLight ? "white" : "black",
                     }}
-                    label="Message"
+                    label="Package"
                     name="message"
                     multiline
                     rows={4}
-                    placeholder="Enter information about your issue here"
+                    placeholder="Enter information more information about your Package here."
                     variant="standard"
                     fullWidth
                     required
