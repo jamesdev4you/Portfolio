@@ -70,7 +70,7 @@ export default function AboutPage(props) {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: props.themeLight ? "primary.main" : "#222222",
+              backgroundColor: props.themeLight ? "white" : "#222222",
             }}
           >
             <motion.div

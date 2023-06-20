@@ -112,7 +112,7 @@ export default function ProjectsPage(props) {
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                backgroundColor: props.themeLight ? "primary.main" : "#222222",
+                backgroundColor: props.themeLight ? "white" : "#222222",
               }}
             >
               <item.icon
@@ -145,16 +145,6 @@ export default function ProjectsPage(props) {
               >
                 {item.desc}
               </Typography>
-              <Typography
-                variant="h7"
-                sx={{
-                  textAlign: "center",
-                  paddingBottom: "10px",
-                  display: { xs: "inline", md: "inline", lg: "none" },
-                }}
-              >
-                {item.desc}
-              </Typography>
 
               <Box
                 sx={{
@@ -167,7 +157,7 @@ export default function ProjectsPage(props) {
                   borderRadius: "20px",
                   margin: { xs: "10px 0px", md: "20px 0px", lg: "20px 0px" },
                   padding: "10px",
-                  backgroundColor: props.themeLight ? "black" : "dark",
+                  backgroundColor: props.themeLight ? "white" : "dark",
                 }}
               >
                 <Box
@@ -180,7 +170,7 @@ export default function ProjectsPage(props) {
                     backgroundSize: "cover",
                     backgroundPosition: "right",
                     border: "2px solid",
-                    borderColor: "error.light",
+                    borderColor: props.themeLight ? "black" : "error.light",
                     marginBottom: "20px",
                   }}
                 ></Box>
@@ -190,7 +180,7 @@ export default function ProjectsPage(props) {
                       fontSize: "16px",
                       textAlign: "center",
 
-                      color: "white",
+                      color: props.themeLight ? "black" : "white",
                     }}
                   >
                     {item.testimonial}
