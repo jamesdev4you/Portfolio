@@ -14,7 +14,7 @@ export default function HomeImage(props) {
           props.themeLight ? Sun : Moon
         }?w=164&h=164&fit=crop&auto=format`}
         alt="Sun"
-        style={{ width: "800px", height: "800px" }}
+        style={{ width: "300px", height: "300px", margin: "auto" }}
       />
     </motion.div>
   );

@@ -1,11 +1,15 @@
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
+import Slide from "@mui/material/Slide";
 import Typography from "@mui/material/Typography";
 import WebIcon from "@mui/icons-material/Web";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import LocalConvenienceStoreIcon from "@mui/icons-material/LocalConvenienceStore";
-import { motion } from "framer-motion";
+import AboutMinions from "../SecondaryComponents/AboutMinions";
 
 export default function AboutPage(props) {
+  const [checked, setChecked] = React.useState(false);
+
   const skillsData = [
     {
       icon: LocalConvenienceStoreIcon,
@@ -56,57 +60,17 @@ export default function AboutPage(props) {
           padding: { xs: "5px", md: "20px 0px", lg: "70px 50px" },
         }}
       >
-        {skillsData.map((item) => (
-          <Box
-            sx={{
-              width: { xs: "100%", md: "40%", lg: "30%" },
-              height: "500px",
-              padding: { xs: "15px", md: "30px", lg: "50px" },
-              margin: { xs: "15px", md: "0px", lg: "0px" },
-              border: "5px solid",
-              borderColor: props.themeLight ? "black" : "dark",
-              borderRadius: "25px",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              backgroundColor: props.themeLight ? "white" : "#222222",
-            }}
-          >
-            <motion.div
-              animate={{ rotate: [10, -10, -10, 10] }}
-              transition={{ repeat: Infinity, duration: 4 }}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <item.icon
-                sx={{
-                  width: "25%",
-                  height: "25%",
-                  minWidth: "80px",
-                  minHeight: "80px",
-                  color: props.themeLight ? "black" : "dark",
-                }}
-              />
-            </motion.div>
-            <Typography
-              variant="h4"
-              sx={{
-                padding: "20px 0px",
-                textAlign: "center",
-                fontFamily: "Shrikhand",
-              }}
-            >
-              {item.title}
-            </Typography>
-            <Typography variant="h6" sx={{ textAlign: "center" }}>
-              {item.desc}
-            </Typography>
-          </Box>
-        ))}
+        <AboutMinions />
+        <AboutMinions />
+        <AboutMinions />
+
+        <AboutMinions />
+        <AboutMinions />
+        <AboutMinions />
+
+        <AboutMinions />
+        <AboutMinions />
+        <AboutMinions />
       </Box>
     </Box>
   );

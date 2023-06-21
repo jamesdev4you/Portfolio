@@ -8,22 +8,17 @@ export default function HomePage(props) {
     <Box
       sx={{
         width: "100%",
-        height: "auto",
+        height: "100vh",
         backgroundColor: props.themeLight ? "primary.light" : "dark",
         display: "flex",
-        alignItems: { xs: "start", md: "space-around", lg: "space-around" },
-        justifyContent: "space-around",
+        gap: "30px",
+        alignItems: { xs: "start", md: "space-around", lg: "center" },
+        justifyContent: "center",
         padding: { xs: "100px 0px", md: "100px 0px", lg: "100px 0px" },
       }}
       ref={props.homeRef}
     >
-      <Box
-        sx={{
-          display: { xs: "none", md: "none", lg: "flex" },
-        }}
-      >
-        <HomeImage themeLight={props.themeLight} />
-      </Box>
+      <HomeImage themeLight={props.themeLight} />
       <HomeAbout themeLight={props.themeLight} />
     </Box>
   );
