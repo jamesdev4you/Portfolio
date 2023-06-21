@@ -61,7 +61,7 @@ const AboutMinions = (props) => {
             variant="body1"
             color="text.primary"
             sx={{
-              fontSize: { xs: "20px", lg: "20px", xl: "36px" },
+              fontSize: { xs: "25px", lg: "20px", xl: "36px" },
               fontFamily: "Shrikhand",
             }}
           >

@@ -27,7 +27,7 @@ export default function AboutPage(props) {
       icon: WebIcon,
       title: "Websites!",
       description:
-        "All websites I provide are 100% custom made and are optimized to suite your vision. Whether you want a business, eCommerce, social media, educational, or landing page website I will create it! Whatever you need done will get done! This process all begins with you and your vision, and ends with a finished product. Whether you have content or not, I'll be sure to provide whatever your missing - offering writing, photographs, design, branding, and more at your discretion!",
+        "All websites I provide are 100% custom made and are optimized to suite your vision. Whether you want a business, eCommerce, or any other website I will create it! This process all begins with you and your vision, and ends with a finished product. Whether you have content or not, I'll be sure to provide whatever your missing - offering writing, photographs, design, branding, and more at your discretion!",
     },
     {
       icon: OpenWithIcon,
