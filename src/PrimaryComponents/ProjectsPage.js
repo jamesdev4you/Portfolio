@@ -190,7 +190,10 @@ export default function ProjectsPage(props) {
               <Stack spacing={4} direction="row" sx={{ paddingTop: "10px" }}>
                 <Button
                   variant="contained"
-                  sx={{ padding: "5px 30px" }}
+                  color="error"
+                  sx={{
+                    padding: "5px 30px",
+                  }}
                   target="_blank"
                   href={`${item.website}`}
                 >
