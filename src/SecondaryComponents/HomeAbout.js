@@ -41,7 +41,7 @@ export default function HomeAbout(props) {
           textAlign: { xs: "center", sm: "center", lg: "left", xl: "left" },
           fontFamily: "Shrikhand",
           fontSize: {
-            xs: "30px",
+            xs: "36px",
             sm: "40px",
             md: "40px",
             lg: "50px",

@@ -21,7 +21,7 @@ export default function AboutPage(props) {
       icon: InstagramIcon,
       title: "Marketing!",
       description:
-        "Whether you're starting out, or needing some upgrades, I will be sure to provide you excellent online marketing. Social Media marketing allows businesses the opportunity to connect with larger audiences, providing you with the ability to expand your market extensively! You'll not only find new customers, but give current customers a way for them to support your business and expand your brand! I'll provide you with accounts, ways to create content easily, and fundamentals to grow!",
+        "Whether you're starting out, or needing some upgrades, I will be sure to provide you excellent online marketing. Social Media marketing allows businesses the opportunity to expand your market extensively! You'll not only find new customers, but give current customers a way for them to support your business and expand your brand! I'll provide you with accounts, ways to create content easily, and fundamentals to grow!",
     },
     {
       icon: WebIcon,
@@ -109,48 +109,57 @@ export default function AboutPage(props) {
           icon={skillsData[0].icon}
           title={skillsData[0].title}
           description={skillsData[0].description}
+          themeLight={props.themeLight}
         />
         <AboutMinions
           icon={skillsData[1].icon}
           title={skillsData[1].title}
           description={skillsData[1].description}
+          themeLight={props.themeLight}
         />
         <AboutMinions
           icon={skillsData[2].icon}
           title={skillsData[2].title}
           description={skillsData[2].description}
+          themeLight={props.themeLight}
         />
 
         <AboutMinions
           icon={skillsData[3].icon}
           title={skillsData[3].title}
           description={skillsData[3].description}
+          themeLight={props.themeLight}
         />
         <AboutMinions
           icon={skillsData[4].icon}
           title={skillsData[4].title}
           description={skillsData[4].description}
+          themeLight={props.themeLight}
         />
         <AboutMinions
           icon={skillsData[5].icon}
           title={skillsData[5].title}
           description={skillsData[5].description}
+          themeLight={props.themeLight}
         />
 
         <AboutMinions
           icon={skillsData[6].icon}
           title={skillsData[6].title}
           description={skillsData[6].description}
+          themeLight={props.themeLight}
         />
         <AboutMinions
           icon={skillsData[7].icon}
           title={skillsData[7].title}
           description={skillsData[7].description}
+          themeLight={props.themeLight}
         />
         <AboutMinions
           icon={skillsData[8].icon}
           title={skillsData[8].title}
           description={skillsData[8].description}
+          themeLight={props.themeLight}
         />
       </Box>
     </Box>

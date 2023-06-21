@@ -67,7 +67,7 @@ function App() {
         fontFamily: ["Montserrat", "Shrikhand"].join(","),
       },
       error: {
-        main: "#FFC536",
+        main: "#FFFFFF",
       },
     },
   });

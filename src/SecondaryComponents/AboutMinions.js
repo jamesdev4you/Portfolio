@@ -30,7 +30,8 @@ const AboutMinions = (props) => {
           xl: "450px",
         },
         borderRadius: "15px",
-        border: "3px solid white",
+        border: "3px solid",
+        borderColor: props.themeLight ? "black" : "dark",
       }}
     >
       <CardActionArea
@@ -51,7 +52,7 @@ const AboutMinions = (props) => {
             justifyContent: "start",
             alignItems: "center",
             transition: "1.2s",
-            backgroundColor: "#272727",
+            backgroundColor: props.themeLight ? "white" : "#272727",
             marginBottom: "8px",
             padding: "15px",
           }}
@@ -70,7 +71,7 @@ const AboutMinions = (props) => {
                 transform: {
                   xs: "scale(1.5)",
                   lg: "scale(2)",
-                  xl: "scale(1.8)",
+                  xl: "scale(1.8 )",
                 },
                 marginLeft: "15px",
               }}
