@@ -79,15 +79,15 @@ export default function AboutPage(props) {
         width: "100%",
         height: "100%",
         backgroundColor: props.themeLight ? "primary.light" : "dark",
-        paddingTop: { xs: "0px", md: "20px", lg: "0px" },
+        paddingTop: { xs: "0px", md: "0px", lg: "0px" },
       }}
     >
       <Typography
-        variant="h2"
         sx={{
           paddingTop: "100px",
           paddingBottom: { xs: "50px", md: "20px", lg: "0px" },
           margin: "auto",
+          fontSize: { xs: "50px", md: "60px", lg: "50px" },
           textAlign: "center",
           fontFamily: "Shrikhand",
         }}

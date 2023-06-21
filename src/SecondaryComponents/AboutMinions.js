@@ -21,8 +21,14 @@ const AboutMinions = (props) => {
   return (
     <Card
       sx={{
-        width: { xs: "250px", lg: "350px", xl: "450px" },
-        height: { xs: "250px", lg: "350px", xl: "450px" },
+        width: { xs: "90%", sm: "70%", md: "450px", lg: "450px", xl: "450px" },
+        height: {
+          xs: "400px",
+          sm: "450px",
+          md: "450px",
+          lg: "450px",
+          xl: "450px",
+        },
         borderRadius: "15px",
         border: "3px solid white",
       }}
@@ -36,8 +42,8 @@ const AboutMinions = (props) => {
           sx={{
             top: isHovered ? "0%" : "-200%",
             borderRadius: "15px",
-            width: { xs: "250px", lg: "350px", xl: "450px" },
-            height: { xs: "250px", lg: "350px", xl: "450px" },
+            width: { xs: "100%", md: "450px", lg: "450px", xl: "450px" },
+            height: { xs: "400px", md: "450px", lg: "450px", xl: "450px" },
             position: "absolute",
             color: "white",
             display: "flex",
@@ -61,8 +67,12 @@ const AboutMinions = (props) => {
             {props.title}{" "}
             <props.icon
               sx={{
-                width: { xs: "30px", xl: "40x" },
-                height: { xs: "30px", xl: "25px" },
+                transform: {
+                  xs: "scale(1.5)",
+                  lg: "scale(2)",
+                  xl: "scale(1.8)",
+                },
+                marginLeft: "15px",
               }}
             />
           </Typography>
@@ -70,7 +80,7 @@ const AboutMinions = (props) => {
             variant="body1"
             color="text.primary"
             sx={{
-              fontSize: { xs: "20px", lg: "20px", xl: "20px" },
+              fontSize: { xs: "17px", md: "20px", lg: "20px", xl: "20px" },
               fontFamily: "Ubuntu",
             }}
           >
@@ -84,8 +94,8 @@ const AboutMinions = (props) => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "start",
-            width: { xs: "250px", lg: "350px", xl: "450px" },
-            height: { xs: "250px", lg: "350px", xl: "450px" },
+            width: { xs: "100%", md: "450px", lg: "450px", xl: "450px" },
+            height: { xs: "400px", md: "450px", lg: "450px", xl: "450px" },
             gap: { xs: "0px", lg: "30px", xl: "50px" },
           }}
           title="green iguana"
@@ -106,8 +116,8 @@ const AboutMinions = (props) => {
           <props.icon
             sx={{
               padding: "0px",
-              width: { xs: "200px", xl: "230px" },
-              height: { xs: "200px", xl: "230px" },
+              width: { xs: "300px", md: "300px", lg: "230px", xl: "230px" },
+              height: { xs: "300px", md: "300px", lg: "230px", xl: "230px" },
               margin: "0px",
             }}
           />

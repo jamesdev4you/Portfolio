@@ -9,18 +9,24 @@ export default function HomeAbout(props) {
       sx={{
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
+        alignItems: "left",
         justifyContent: "center",
-        height: "100%",
-        width: { xs: "80%", md: "80%", lg: "40%" },
+        height: "auto",
+        width: { xs: "100%", sm: "100%", md: "50%", lg: "50%", xl: "43%" },
       }}
     >
       <Typography
         variant="h3"
         sx={{
-          textAlign: "center",
+          textAlign: { xs: "center", sm: "center", lg: "left", xl: "left" },
           fontFamily: "Shrikhand",
-          fontSize: { xs: "18px", md: "20px", lg: "60px" },
+          fontSize: {
+            xs: "30px",
+            sm: "40px",
+            md: "40px",
+            lg: "50px",
+            xl: "60px",
+          },
           color: props.themeLight ? "black" : "white",
         }}
       >
@@ -32,9 +38,15 @@ export default function HomeAbout(props) {
       <Typography
         variant="h3"
         sx={{
-          textAlign: "center",
+          textAlign: { xs: "center", sm: "center", lg: "left", xl: "left" },
           fontFamily: "Shrikhand",
-          fontSize: { xs: "18px", md: "20px", lg: "60px" },
+          fontSize: {
+            xs: "30px",
+            sm: "40px",
+            md: "40px",
+            lg: "50px",
+            xl: "60px",
+          },
         }}
       >
         using{" "}
