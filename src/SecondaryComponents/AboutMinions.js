@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import WebIcon from "@mui/icons-material/Web";
 import "../index.css";
 
-const AboutMinions = () => {
+const AboutMinions = (props) => {
   const [isHovered, setIsHovered] = useState(false);
   function handleMouseOver() {
     setIsHovered(true);
@@ -42,18 +42,39 @@ const AboutMinions = () => {
             color: "white",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center",
+            justifyContent: "start",
             alignItems: "center",
-            transition: "2s",
-            backgroundColor: "black",
+            transition: "1.2s",
+            backgroundColor: "#272727",
             marginBottom: "8px",
+            padding: "15px",
           }}
         >
-          <Typography variant="body1" color="text.primary">
-            More information...
+          <Typography
+            variant="body1"
+            color="text.primary"
+            sx={{
+              fontSize: { xs: "20px", lg: "20px", xl: "36px" },
+              fontFamily: "Shrikhand",
+            }}
+          >
+            {props.title}{" "}
+            <props.icon
+              sx={{
+                width: { xs: "30px", xl: "40x" },
+                height: { xs: "30px", xl: "25px" },
+              }}
+            />
           </Typography>
-          <Typography variant="body1" color="text.primary">
-            Description of my cool projects!
+          <Typography
+            variant="body1"
+            color="text.primary"
+            sx={{
+              fontSize: { xs: "20px", lg: "20px", xl: "20px" },
+              fontFamily: "Ubuntu",
+            }}
+          >
+            {props.description}
           </Typography>
         </CardContent>
         <CardContent
@@ -62,7 +83,7 @@ const AboutMinions = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center",
+            justifyContent: "start",
             width: { xs: "250px", lg: "350px", xl: "450px" },
             height: { xs: "250px", lg: "350px", xl: "450px" },
             gap: { xs: "0px", lg: "30px", xl: "50px" },
@@ -72,22 +93,21 @@ const AboutMinions = () => {
           <Typography
             color="text.primary"
             sx={{
-              fontFamily: "Ubuntu",
               fontSize: { xs: "30px", lg: "40px", xl: "50px" },
               textAlign: "center",
               padding: "0px",
               width: "100%",
-              height: "10%",
+
               fontFamily: "Shrikhand",
             }}
           >
-            Social Media
+            {props.title}
           </Typography>
-          <WebIcon
+          <props.icon
             sx={{
               padding: "0px",
-              width: "200px",
-              height: "200px",
+              width: { xs: "200px", xl: "230px" },
+              height: { xs: "200px", xl: "230px" },
               margin: "0px",
             }}
           />

@@ -24,9 +24,9 @@ export default function HomeAbout(props) {
           color: props.themeLight ? "black" : "white",
         }}
       >
-        Skip working{" "}
+        {props.themeLight ? "Reaching new " : "Skip working "}
         <span style={{ color: props.themeLight ? "#FFC536" : "#0000b2" }}>
-          {props.themeLight ? "daylights" : "nights"}
+          {props.themeLight ? "heights" : "nights"}
         </span>
       </Typography>
       <Typography
