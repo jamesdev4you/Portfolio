@@ -1,25 +1,36 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.801eb0fb.css",
-    "main.js": "/Portfolio/static/js/main.d89a7a3a.js",
+    "main.js": "/Portfolio/static/js/main.0d431da3.js",
+    "static/media/edvania.jpg": "/Portfolio/static/media/edvania.edf0a5e3dcd4ed5da118.jpg",
     "static/media/wanphone.png": "/Portfolio/static/media/wanphone.652bb69a6b03e7dbceef.png",
+    "static/media/ptphone.png": "/Portfolio/static/media/ptphone.049594b25439b7ebc630.png",
     "static/media/gunnphone.png": "/Portfolio/static/media/gunnphone.c6695077c541d4d9c501.png",
     "static/media/james.jpg": "/Portfolio/static/media/james.20ab9cec48852583f356.jpg",
+    "static/media/ptdesk.png": "/Portfolio/static/media/ptdesk.7d13f6539d8bc99fc1cd.png",
     "static/media/wandesk.png": "/Portfolio/static/media/wandesk.f146790bd5cffa17f476.png",
     "static/media/gunndesk.png": "/Portfolio/static/media/gunndesk.d449c89ed28a6a8aff1b.png",
-    "static/media/ptphone.png": "/Portfolio/static/media/ptphone.89412d1b51b729c97755.png",
-    "static/media/ptdesk.png": "/Portfolio/static/media/ptdesk.a3d5af95547f2637025d.png",
     "static/media/Ubuntu-Regular.ttf": "/Portfolio/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
     "static/media/Ubuntu-Bold.ttf": "/Portfolio/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
     "static/media/Montserrat-VariableFont_wght.ttf": "/Portfolio/static/media/Montserrat-VariableFont_wght.c28a96c369871653b853.ttf",
+    "static/media/thegunnbrothers.jpg": "/Portfolio/static/media/thegunnbrothers.d50454f2ca6c08f869c1.jpg",
+    "static/media/liquid.png": "/Portfolio/static/media/liquid.b968f7246fdccce0801d.png",
     "static/media/moon.png": "/Portfolio/static/media/moon.fa6b49bcb2c99d903cbd.png",
+    "static/media/github.png": "/Portfolio/static/media/github.7102974f43778f562ae4.png",
+    "static/media/instagram.png": "/Portfolio/static/media/instagram.4df8b6ae83b65933007c.png",
     "static/media/sun.png": "/Portfolio/static/media/sun.1658b6b697077ce6c0ad.png",
+    "static/media/framer.png": "/Portfolio/static/media/framer.0c0d5d74f53a99298734.png",
+    "static/media/reactimg.png": "/Portfolio/static/media/reactimg.e11b519c722ba111c901.png",
+    "static/media/wan.jpg": "/Portfolio/static/media/wan.4dbc37cea0abf9890a38.jpg",
+    "static/media/JavaScript.png": "/Portfolio/static/media/JavaScript.e4a6603a50d997ebe438.png",
+    "static/media/CSS3.png": "/Portfolio/static/media/CSS3.2a7daffa85bb2869d26d.png",
+    "static/media/mui.png": "/Portfolio/static/media/mui.7913345da2efbe01d2dc.png",
     "index.html": "/Portfolio/index.html",
     "main.801eb0fb.css.map": "/Portfolio/static/css/main.801eb0fb.css.map",
-    "main.d89a7a3a.js.map": "/Portfolio/static/js/main.d89a7a3a.js.map"
+    "main.0d431da3.js.map": "/Portfolio/static/js/main.0d431da3.js.map"
   },
   "entrypoints": [
     "static/css/main.801eb0fb.css",
-    "static/js/main.d89a7a3a.js"
+    "static/js/main.0d431da3.js"
   ]
 }
