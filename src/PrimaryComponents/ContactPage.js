@@ -41,7 +41,7 @@ export default function ContactPage(props) {
           margin: "auto",
           textAlign: "center",
           backgroundColor: props.themeLight ? "primary.light" : "dark",
-          fontFamily: "Shrikhand",
+          fontFamily: "Ubuntu",
         }}
         ref={props.contactRef}
       >
@@ -50,7 +50,7 @@ export default function ContactPage(props) {
       <Box
         sx={{
           width: "100%",
-          height: "100%",
+          height: "700px",
           backgroundColor: props.themeLight ? "primary.light" : "dark",
           display: "flex",
           flexDirection: "column",

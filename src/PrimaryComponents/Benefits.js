@@ -1,9 +1,8 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import LocationCityOutlinedIcon from "@mui/icons-material/LocationCityOutlined";
-import MeetingRoomOutlinedIcon from "@mui/icons-material/MeetingRoomOutlined";
-import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
+import SchoolIcon from "@mui/icons-material/School";
+import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
 import "../index.css";
@@ -11,42 +10,22 @@ import "../index.css";
 export default function Benefits(props) {
   const skillsData = [
     {
-      icon: MeetingRoomOutlinedIcon,
-      title: "Starting Out",
-      price: "$1,000",
-      checkmark: CheckRoundedIcon,
-      itemOne: "✓ Custom Website",
-      itemTwo: "✓ Branding",
-      itemThree: "✓ SEO",
-      itemFour: "✓ Establishing Digital Marketing",
+      icon: SportsEsportsIcon,
+      title: "eSports and Gaming",
+      itemOne:
+        "Playing video games has always been a huge part of my life, and as I get older I found ways to continue this passive hobby through Valorant. Currently I lead a team where I create strategies, lead practices, and win tournaments in a rapidly evolving game. At the end of the day, this is just a hobby, but it's one that is very dear to my heart!",
     },
     {
-      icon: HomeOutlinedIcon,
-      title: "Leveling Up",
-      price: "$1,500",
-      itemOne: "✓ Custom Website",
-      itemTwo: "✓ Branding",
-      itemThree: "✓ SEO",
-      itemFour: "✓ Digital Marketing",
-      itemFive: "✓ Newsletters",
-      itemSix: "✓ Google Page",
-      itemSeven: "✓ Newsletter",
-      itemEight: "✓ Blogs",
+      icon: DirectionsRunIcon,
+      title: "Active Lifestyle",
+      itemOne:
+        "To maintain my keystone habits and live a healthy physical and mental life, I workout constantly to relieve myself from any mental and physical fatigue. By stretching, running, and lifting at least 6 days a week I find myself able to consistently provide 100% effort into anything I do!",
     },
     {
-      icon: LocationCityOutlinedIcon,
-      title: "Professional",
-      price: "$2,500",
-      itemOne: "✓ Custom Website",
-      itemTwo: "✓ Branding",
-      itemThree: "✓ SEO",
-      itemFour: "✓ Digital Marketing",
-      itemFive: "✓ Newsletters",
-      itemSix: "✓ Google Page",
-      itemSeven: "✓ Newsletter",
-      itemEight: "✓ Blogs",
-      itemNine: "✓ E-Mail Templates",
-      itemTen: "✓ Business Automation",
+      icon: SchoolIcon,
+      title: "Chasing Education",
+      itemOne:
+        "After finishing my Associates degree, and teaching myself frontend development, I found a resurrgence in energy to learn as much as possible! While looking for a job I am also a full-time student at USF attempting to get a bachelors in Computer Science so that I can eventually get a Master's in Cybersecurity! ",
     },
   ];
 
@@ -66,11 +45,11 @@ export default function Benefits(props) {
           paddingBottom: { xs: "50px", md: "20px", lg: "0px" },
           margin: "auto",
           textAlign: "center",
-          fontFamily: "Shrikhand",
+          fontFamily: "Ubuntu",
         }}
         ref={props.benefitRef}
       >
-        Pick Your Package!
+        Get to know me!
       </Typography>
       <Box
         sx={{
@@ -127,8 +106,6 @@ export default function Benefits(props) {
               }}
             >
               {item.title}
-              <span style={{ paddingRight: "5px" }} />
-              {item.price}
             </Typography>
             <Box
               sx={{
@@ -143,119 +120,15 @@ export default function Benefits(props) {
                 <Typography
                   variant="h6"
                   sx={{
-                    textAlign: "Left",
+                    textAlign: "center",
                     fontFamily: "Ubuntu",
                     width: "100%",
                   }}
                 >
                   {item.itemOne}
                 </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    textAlign: "Left",
-                    fontFamily: "Ubuntu",
-                    width: "100%",
-                  }}
-                >
-                  {item.itemTwo}
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    textAlign: "Left",
-                    fontFamily: "Ubuntu",
-                    width: "100%",
-                  }}
-                >
-                  {item.itemThree}
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    textAlign: "Left",
-                    fontFamily: "Ubuntu",
-                    width: "100%",
-                  }}
-                >
-                  {item.itemFour}
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    textAlign: "Left",
-                    fontFamily: "Ubuntu",
-                    width: "100%",
-                  }}
-                >
-                  {item.itemFive}
-                </Typography>
-              </Box>
-              <Box>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    textAlign: "Left",
-                    fontFamily: "Ubuntu",
-                    width: "100%",
-                  }}
-                >
-                  {item.itemSix}
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    textAlign: "Left",
-                    fontFamily: "Ubuntu",
-                    width: "100%",
-                  }}
-                >
-                  {item.itemSeven}
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    textAlign: "Left",
-                    fontFamily: "Ubuntu",
-                    width: "100%",
-                  }}
-                >
-                  {item.itemEight}
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    textAlign: "Left",
-                    fontFamily: "Ubuntu",
-                    width: "100%",
-                  }}
-                >
-                  {item.itemNine}
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    textAlign: "Left",
-                    fontFamily: "Ubuntu",
-                    width: "100%",
-                  }}
-                >
-                  {item.itemTen}
-                </Typography>
               </Box>
             </Box>
-            <Button
-              variant="contained"
-              color="error"
-              onClick={props.contactExecuteScroll}
-              sx={{
-                padding: "5px 30px",
-                margin: { xs: "30px 0px", lg: "0px" },
-              }}
-              target="_blank"
-            >
-              Begin Today!
-            </Button>
           </Box>
         ))}
       </Box>

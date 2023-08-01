@@ -5,7 +5,9 @@ import ProjectPhoneImg from "../SecondaryComponents/ProjectPhoneImg";
 import HvacIcon from "@mui/icons-material/Hvac";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
-import James from "../Images/james.jpg";
+import Gunn from "../Images/thegunnbrothers.jpg";
+import Edvania from "../Images/edvania.jpg";
+import Wan from "../Images/wan.jpg";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 
@@ -16,12 +18,12 @@ export default function ProjectsPage(props) {
       image2: props.Gunnphone,
       icon: HvacIcon,
       title: "Gunn HVAC",
-      desc: "The Gunn Brothers were having issues connecting with clients online, and having a website. Not only did I provide them with a website, but I established ways to stedily increse their SEO retention over time. Furthermore, I provided them with content, and a way for customers to find out how much a service estimate would be. Moreso, I gave them a way for users to contact with them, and ensured that every portion of the website linked the customer towards calling them.",
+      desc: "The Gunn Brothers were having issues connecting with clients online due to not having a website. Not only did I provide them with a website, but I established ways to stedily increse their SEO retention over time. Furthermore, I provided them with content, and a way for customers to find out how much a service estimate would be. Moreso, I gave them a way for users to contact them, and ensured that every portion of the website linked the customer towards calling them.",
       website: "https://www.gunnbrothershvac.com/",
       repo: "https://github.com/jamesdev4you/gunnbrothersnewnew",
-      person: James,
+      person: Gunn,
       testimonial:
-        "❝At RCotterill PT, I want to help men and women that have felt like they've been spinning their wheels with their fitness and health.❞ ",
+        "❝I was amazed by how much James cared about our business! This website not only made us thousands of dollars, but it also established us as a professional business! We can't recommend him enough!❞ ",
       rating: "⭐⭐⭐⭐⭐",
       name: "James Boyle",
     },
@@ -29,13 +31,13 @@ export default function ProjectsPage(props) {
       image: props.Wandesk,
       image2: props.Wanphone,
       icon: PointOfSaleIcon,
-      title: "SalesBot",
-      desc: "This landing page was created during my appreticeship, and uses animations and color theory to provide a striking visual experience for possible customers to learn about what the SalesBot has to offer!",
-      website: "https://github.com/jamesdev4you/puiblicsales",
+      title: "Chariot AI",
+      desc: "This landing page was created during my appreticeship, and uses animations and color theory to provide a striking visual experience for possible customers to learn about what the Chariot AI has to offer!",
+      website: "https://www.chariotai.us/",
       repo: "https://github.com/jamesdev4you/puiblicsales",
-      person: James,
+      person: Wan,
       testimonial:
-        "❝At RCotterill PT, I want to help men and women that have felt like they've been spinning their wheels with their fitness and health.❞ ",
+        "❝I gave James this project towards the end of his appreticeship as I believed he was ready for it. Not only did he complete it quickly, but managed to exceed all of my expectations!❞ ",
       rating: "⭐⭐⭐⭐⭐",
       name: "James Boyle",
     },
@@ -43,13 +45,13 @@ export default function ProjectsPage(props) {
       image: props.Ptdesk,
       image2: props.Ptphone,
       icon: FitnessCenterIcon,
-      title: "Steven's PT!",
-      desc: "This website allows clients to seemlessly navigate to find their personal training needs by offering a variety of plans to choose from. Client requested a google forms intergration, multiple swipers, and animations to provide a simple yet interactive experience!",
-      website: "https://www.stevenreedpt.com/",
-      repo: "https://github.com/jamesdev4you/StevenPersonalTraining",
-      person: James,
+      title: "Brazilian Fitness",
+      desc: "This website allows clients to seemlessly navigate to find their personal training needs by offering a variety of plans to choose from. From not having a website, to having one that allows users to pay and schedule a future training session has made Edvania's business excel!",
+      website: "https://www.brazilianfitness.us/",
+      repo: "https://github.com/jamesdev4you/newpersonaltraining",
+      person: Edvania,
       testimonial:
-        "❝At RCotterill PT, I want to help men and women that have felt like they've been spinning their wheels with their fitness and health.❞ ",
+        "❝Just as I was thinking about creating a website, James came to me asking if I needed one. He was an Angel! He made me an amazing website that seemlessly intregrated new customers into my already busy calendar!❞ ",
       rating: "⭐⭐⭐⭐⭐",
       name: "James Boyle",
     },
@@ -70,11 +72,11 @@ export default function ProjectsPage(props) {
           padding: "100px 0px",
           margin: "auto",
           textAlign: "center",
-          fontFamily: "Shrikhand",
+          fontFamily: "Ubuntu",
         }}
         ref={props.projectsRef}
       >
-        Previous Clients
+        My Live Projects!
       </Typography>
       <Box
         sx={{
@@ -174,7 +176,7 @@ export default function ProjectsPage(props) {
                     marginBottom: "20px",
                   }}
                 ></Box>
-                <Box sx={{ width: "70%" }}>
+                <Box sx={{ width: { xs: "100%", md: "70%", lg: "70" } }}>
                   <Typography
                     sx={{
                       fontSize: "16px",
@@ -197,7 +199,18 @@ export default function ProjectsPage(props) {
                   target="_blank"
                   href={`${item.website}`}
                 >
-                  See it Live!
+                  Live
+                </Button>
+                <Button
+                  variant="contained"
+                  color="error"
+                  sx={{
+                    padding: "5px 30px",
+                  }}
+                  target="_blank"
+                  href={`${item.repo}`}
+                >
+                  Repo
                 </Button>
               </Stack>
             </Box>

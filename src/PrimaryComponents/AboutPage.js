@@ -10,7 +10,7 @@ import IconReact from "../Images/reactimg.png";
 import IconLiquid from "../Images/liquid.png";
 import IconGit from "../Images/github.png";
 import IconMui from "../Images/mui.png";
-import IconWebpack from "../Images/webpack.png";
+import IconFramer from "../Images/framer.png";
 import IconGoogle from "../Images/google.png";
 import WaterDropIcon from "@mui/icons-material/WaterDrop";
 import SmartToyIcon from "@mui/icons-material/SmartToy";
@@ -30,55 +30,55 @@ export default function AboutPage(props) {
       icon: IconHTML,
       title: "HTML",
       description:
-        "Whether you're starting out, or needing some upgrades, I will be sure to provide you excellent online marketing. Social Media marketing allows businesses the opportunity to expand your market extensively! You'll not only find new customers, but give current customers a way for them to support your business and expand your brand! I'll provide you with accounts, ways to create content easily, and fundamentals to grow!",
+        "HTML (HyperText Markup Language) is the standard markup language used for creating and structuring content on websites. It consists of a series of tags and elements that define the various components of a webpage, such as headings, paragraphs, images, and links. By first learning HTML, I was able to craft the layout and presentation of web pages, making it a core skill for me.",
     },
     {
       icon: IconCSS,
       title: "CSS",
       description:
-        "All websites I provide are 100% custom made and are optimized to suite your vision. Whether you want a business, eCommerce, or any other website I will create it! This process all begins with you and your vision, and ends with a finished product. Whether you have content or not, I'll be sure to provide whatever your missing - offering writing, photographs, design, branding, and more at your discretion!",
+        "CSS (Cascading Style Sheets) is a powerful language used in web development to control the visual appearance and layout of HTML elements on a webpage. It enables me to apply colors, fonts, spacing, and other stylistic properties to create a visually appealing and consistent user experience. By separating the presentation layer from the content, CSS allows for easy and efficient design changes across multiple pages, making it a prominent tool for my web design.",
     },
     {
       icon: IconRe,
       title: "JavaScript",
       description:
-        "70% to 80% of customers in the United States connect with businesses through the internet. Through my services your business will establish itself in the market intelligently, with every step being in the right direction. By using social media marketing, website design, SEO, branding, and more I'll provide everything you need to be successful! My services are a partnership - as I want nothing more than your business to succed!",
+        "JavaScript is a versatile and widely-used programming language that enables dynamic and interactive elements on websites. As a client-side scripting language, it runs directly within a web browser and allows me to add functionality, user interactions, and modify the content of web pages in real-time. With its broad adoption, JavaScript has become a core component of every web page I create!",
     },
     {
       icon: IconReact,
       title: "React",
       description:
-        "87% of consumers used Google to evaluate businesses in 2022! Search Engine Optimization(SEO) allows your website to rank higher in search results - bringing you more eyes to your business! Through my services you'll get cost-effective leads, increase brand awareness, stand out from competition, build trust, and more! Not only will I boost your SEO but I'll also build you a wonderful Google Page!",
+        "React is a popular and powerful JavaScript library for building user interfaces and front-end applications. Developed by Facebook, it allows developers to create reusable components and efficiently manage the state of web pages, resulting in faster and more responsive user experiences. With its declarative and component-based approach, React has revolutionized web development, making it a valuable asset for me to build scalable and maintainable web applications.",
     },
     {
       icon: IconLiquid,
       title: "Liquid",
       description:
-        "Anyone pitching fast change is lying to you. As a business owner you are already familiar with the idea that it'll take time to get the fruits of your labor. But with proper strategizing, you'll be able to reap them sooner rather than later. I'll provide you with a long-term model that'll help you grow your business organically for years to come by establishing a strong online presence through Marketing, Website design, SEO, and more!",
+        "Before learning JavaScript, I learned Liquid, which is a Javascript and Component based library for creating modern state of the art eCommerce pages on Shopify. Although similar to React,  enables developers to build dynamic and personalized web templates by embedding variables, filters, and control structures within markup files. Overall it is a simple, yet secure way to create eCommerce webpages on Shopify. ",
     },
     {
       icon: IconGit,
       title: "Git",
       description:
-        "Out of the roughly 2 Billion amount of websites on the internet, a third of them are blogs! My services capitalize on this market by using blogs to bring traffic towards your website, build an engaging audience, generate leads, and more! Although blogs are usually seen as an obscure part of the internet, they aren't! By using my services I ensure you that you'll be able to use this huge portion of the internet to your advantage!",
+        "Git is a widely-used distributed version control system that allows developers to track changes in their codebase over time. Developed by Linus Torvalds, Git provides a reliable and collaborative environment for managing code repositories, enabling multiple developers to work simultaneously on projects without conflicts. With its powerful branching and merging capabilities, Git empowers teams to efficiently collaborate and present programs and web pages!",
     },
     {
       icon: IconMui,
-      title: "SEO",
+      title: "MUI",
       description:
-        "Most successful businesses use the 70/30 rule - 70% of content provided by them are useful and educational content catered towards their audience while 30% is provided for selling. Newsletters can help fill a huge portion of this 70% by generating leads, building relationships, saving money, and modernizing your business! Through my practices you'll be sure to generate engaging content, putting yourself ahead of your competition!",
+        "Mui (Material-UI) is a popular and comprehensive open-source library that provides a set of ready-to-use React components following Google's Material Design guidelines. With Mui, developers can quickly create modern and visually appealing user interfaces for web applications. Its customizable and responsive components, along with a vast collection of pre-designed elements, make Mui a valuable asset for building intuitive and aesthetically pleasing user experiences.",
     },
     {
-      icon: IconWebpack,
-      title: "Responsive",
+      icon: IconFramer,
+      title: "Framer Motion",
       description:
-        "Branding is one of the most prominent ways to generate new revenue! If you do not have a logo, or a theme of colors, I'll provide you with them! If you do, I can still be of assitance by blending your logo, marketing, and reputation into a cohesive picture that customers will resonate with! Branding supports every aspect of your business, and through my services, you'll be able to leverage all of these benefits to make you money! ",
+        "Framer Motion is a feature-rich and user-friendly animation library for React applications. It empowers developers to effortlessly create stunning and fluid animations with a declarative API, providing a delightful user experience. With its support for keyframes, spring physics, and gesture-based interactions, Framer Motion is a powerful tool that streamlines the process of adding dynamic and engaging animations to web projects.",
     },
     {
       icon: IconGoogle,
-      title: "UI/UX",
+      title: "Google API",
       description:
-        "The technological revolution of A.I. is upon us! Get ahead but using automation to immediately repond to customer service requests, automate SMS marketing messages, implement a database storing customer contact information, and building your marketing presence! Through my practices I promise to make your day-to-day tasks easier allowing you to focus on other aspects of your business! ",
+        "The Google Maps API is a powerful set of tools and services that allows developers to integrate dynamic and interactive maps into their web or mobile applications. With extensive documentation and easy-to-use interfaces, developers can display location-based data, create custom map markers, and implement geolocation features seamlessly. ",
     },
   ];
 
@@ -98,11 +98,11 @@ export default function AboutPage(props) {
           margin: "auto",
           fontSize: { xs: "50px", md: "60px", lg: "50px" },
           textAlign: "center",
-          fontFamily: "Shrikhand",
+          fontFamily: "Ubuntu",
         }}
         ref={props.aboutRef}
       >
-        My Services!
+        My Skills!
       </Typography>
       <Box
         sx={{

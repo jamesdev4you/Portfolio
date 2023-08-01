@@ -5,6 +5,7 @@ import AboutPage from "./PrimaryComponents/AboutPage";
 import Benefits from "./PrimaryComponents/Benefits";
 import ProjectsPage from "./PrimaryComponents/ProjectsPage";
 import ContactPage from "./PrimaryComponents/ContactPage";
+import Footer from "./PrimaryComponents/Footer";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Montserrat from "./Fonts/Montserrat-VariableFont_wght.ttf";
@@ -117,6 +118,7 @@ function App() {
         Wanphone={Wanphone}
       />
       <ContactPage themeLight={themeLight} contactRef={contactRef} />
+      <Footer />
     </ThemeProvider>
   );
 }
