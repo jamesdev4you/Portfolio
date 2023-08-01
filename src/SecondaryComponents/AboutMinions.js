@@ -23,7 +23,7 @@ const AboutMinions = (props) => {
       sx={{
         width: { xs: "90%", sm: "70%", md: "450px", lg: "450px", xl: "450px" },
         height: {
-          xs: "400px",
+          xs: "350px",
           sm: "450px",
           md: "450px",
           lg: "450px",
@@ -66,16 +66,6 @@ const AboutMinions = (props) => {
             }}
           >
             {props.title}{" "}
-            <props.icon
-              sx={{
-                transform: {
-                  xs: "scale(1.5)",
-                  lg: "scale(2)",
-                  xl: "scale(1.8 )",
-                },
-                marginLeft: "15px",
-              }}
-            />
           </Typography>
           <Typography
             variant="body1"
@@ -114,14 +104,7 @@ const AboutMinions = (props) => {
           >
             {props.title}
           </Typography>
-          <props.icon
-            sx={{
-              padding: "0px",
-              width: { xs: "300px", md: "300px", lg: "230px", xl: "230px" },
-              height: { xs: "300px", md: "300px", lg: "230px", xl: "230px" },
-              margin: "0px",
-            }}
-          />
+          <img src={props.icon} style={{ width: 240, height: 240 }} />
         </CardContent>
       </CardActionArea>
     </Card>
