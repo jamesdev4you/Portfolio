@@ -1,21 +1,21 @@
-import React, { useRef } from "react";
-import Menu from "./PrimaryComponents/Menu";
-import HomePage from "./PrimaryComponents/HomePage";
-import AboutPage from "./PrimaryComponents/AboutPage";
-import Benefits from "./PrimaryComponents/Benefits";
-import ProjectsPage from "./PrimaryComponents/ProjectsPage";
-import ContactPage from "./PrimaryComponents/ContactPage";
-import Footer from "./PrimaryComponents/Footer";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
-import Montserrat from "./Fonts/Montserrat-VariableFont_wght.ttf";
-import Wandesk from "./Images/wandesk.png";
-import Wanphone from "./Images/wanphone.png";
-import Ptdesk from "./Images/ptdesk.png";
-import Ptphone from "./Images/ptphone.png";
-import Gunndesk from "./Images/gunndesk.png";
-import Gunnphone from "./Images/gunnphone.png";
-import { useState } from "react";
+import React, { useRef } from 'react';
+import Menu from './PrimaryComponents/Menu';
+import HomePage from './PrimaryComponents/HomePage';
+import AboutPage from './PrimaryComponents/AboutPage';
+import Benefits from './PrimaryComponents/Benefits';
+import ProjectsPage from './PrimaryComponents/ProjectsPage';
+import ContactPage from './PrimaryComponents/ContactPage';
+import Footer from './PrimaryComponents/Footer';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import Montserrat from './Fonts/Montserrat-VariableFont_wght.ttf';
+import Wandesk from './Images/wandesk.png';
+import Wanphone from './Images/wanphone.png';
+import Ptdesk from './Images/ptdesk.png';
+import Ptphone from './Images/ptphone.png';
+import Gunndesk from './Images/gunndesk.png';
+import Gunnphone from './Images/gunnphone.png';
+import { useState } from 'react';
 
 function App() {
   const [themeLight, setThemeType] = useState(false);
@@ -24,51 +24,51 @@ function App() {
       MuiCardActionArea: {
         styleOverrides: {
           root: {
-            transition: "1s ease all",
+            transition: '1s ease all',
           },
           focusHighlight: {
-            background: "transparent",
-            pointerEvents: "none",
+            background: 'transparent',
+            pointerEvents: 'none',
           },
         },
       },
       MuiSwitch: {
         styleOverrides: {
           switchBase: {
-            color: "#ccc",
+            color: '#ccc',
           },
           colorPrimary: {
-            "&.Mui-checked": {
-              color: "#f2ff00",
+            '&.Mui-checked': {
+              color: '#f2ff00',
             },
-            "&.MuiSlider-rail": {
-              backgroundColor: "red",
+            '&.MuiSlider-rail': {
+              backgroundColor: 'red',
             },
           },
           track: {
             opacity: 0.2,
-            backgroundColor: "#fff",
-            ".Mui-checked.Mui-checked + &": {
+            backgroundColor: '#fff',
+            '.Mui-checked.Mui-checked + &': {
               opacity: 0.7,
-              backgroundColor: "#fff",
+              backgroundColor: '#fff',
             },
           },
         },
       },
     },
     palette: {
-      mode: themeLight ? "light" : "dark",
+      mode: themeLight ? 'light' : 'dark',
       primary: {
-        main: "#1D9AB8",
+        main: '#1D9AB8',
       },
       secondary: {
-        main: "#f50057",
+        main: '#f50057',
       },
       typography: {
-        fontFamily: ["Montserrat", "Shrikhand"].join(","),
+        fontFamily: ['Montserrat', 'Shrikhand'].join(','),
       },
       error: {
-        main: themeLight ? "#000000" : "#FFFFFF",
+        main: themeLight ? '#000000' : '#FFFFFF',
       },
     },
   });
@@ -78,13 +78,13 @@ function App() {
 
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
-  const benefitRef = useRef(null);
+  const skillsRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
   const homeExecuteScroll = () => homeRef.current.scrollIntoView();
   const aboutExecuteScroll = () => aboutRef.current.scrollIntoView();
-  const benefitExecuteScroll = () => benefitRef.current.scrollIntoView();
+  const skillsExecuteScroll = () => skillsRef.current.scrollIntoView();
   const projectsExecuteScroll = () => projectsRef.current.scrollIntoView();
   const contactExecuteScroll = () => contactRef.current.scrollIntoView();
 
@@ -99,12 +99,13 @@ function App() {
         aboutExecuteScroll={aboutExecuteScroll}
         projectsExecuteScroll={projectsExecuteScroll}
         contactExecuteScroll={contactExecuteScroll}
+        skillsExecuteScroll={skillsExecuteScroll}
       />
       <HomePage themeLight={themeLight} homeRef={homeRef} />
-      <AboutPage themeLight={themeLight} aboutRef={aboutRef} />
+      <AboutPage themeLight={themeLight} skillsRef={skillsRef} />
       <Benefits
         themeLight={themeLight}
-        aboutRef={benefitRef}
+        aboutRef={aboutRef}
         contactExecuteScroll={contactExecuteScroll}
       />
       <ProjectsPage
