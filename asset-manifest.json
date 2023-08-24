@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.af7d9163.css",
-    "main.js": "/static/js/main.60d8855c.js",
+    "main.js": "/static/js/main.b0d975ba.js",
     "static/media/edvania.jpg": "/static/media/edvania.edf0a5e3dcd4ed5da118.jpg",
     "static/media/wanphone.png": "/static/media/wanphone.652bb69a6b03e7dbceef.png",
     "static/media/ptphone.png": "/static/media/ptphone.049594b25439b7ebc630.png",
@@ -29,10 +29,10 @@
     "static/media/mui.png": "/static/media/mui.7913345da2efbe01d2dc.png",
     "index.html": "/index.html",
     "main.af7d9163.css.map": "/static/css/main.af7d9163.css.map",
-    "main.60d8855c.js.map": "/static/js/main.60d8855c.js.map"
+    "main.b0d975ba.js.map": "/static/js/main.b0d975ba.js.map"
   },
   "entrypoints": [
     "static/css/main.af7d9163.css",
-    "static/js/main.60d8855c.js"
+    "static/js/main.b0d975ba.js"
   ]
 }
